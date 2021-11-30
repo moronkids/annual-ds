@@ -4,8 +4,8 @@ import Image from "next/image";
 function index() {
   return (
     <>
-      <div className="ds-container d-flex mx-auto">
-        <div className="ds-header d-flex align-items-center my-auto w-100 justify-content-between">
+      <div className="ds-header d-flex mx-auto">
+        <div className="ds-container d-flex mx-auto d-flex align-items-center my-auto w-100 justify-content-between">
           <div className="iconDS">
             <Image src={icons} alt="" srcset="" />
           </div>

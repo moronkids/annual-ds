@@ -1,7 +1,7 @@
 import React from "react";
 
 function index(props) {
-  return <div>{props.children}</div>;
+  return <div className="ds-body">{props.children}</div>;
 }
 
 export default index;

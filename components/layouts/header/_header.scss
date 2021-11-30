@@ -1,9 +1,7 @@
 .ds-header {
     height: 84px;
     width: 100%;
-    @include xl {
-        margin: 0 20px;
-    }
+
     .iconDS {
         img {
             height: 44px;
