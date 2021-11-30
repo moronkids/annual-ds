@@ -1,6 +1,7 @@
 import React from "react";
 import Person from "styles/assets/photo-desc-person.svg";
 import Image from "next/image";
+//tes
 function Index() {
   return (
     <div className="ds-section-desc">
