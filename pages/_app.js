@@ -15,7 +15,7 @@ import { AppWrapper } from "providers";
 import NProgress from "nprogress";
 import Router from "next/router";
 import "styles/nprogress.css";
-
+import "styles/scss/bootstrap.scss";
 NProgress.configure({
   minimum: 0.3,
   easing: "ease",
