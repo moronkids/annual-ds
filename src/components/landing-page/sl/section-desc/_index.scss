@@ -11,35 +11,23 @@
         min-height: 380px;
         border-bottom: 1px solid #cecece;
         #name-person {
-            font-family: Open Sans;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 16px;
+            @include font-face($font-opensans, 1.6rem, 700);
             line-height: 22px;
-            color: #3a3a3a;
+            color: $text-primary;
         }
         #title-person {
-            font-family: Open Sans;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 14px;
+            @include font-face($font-opensans, 1.4rem);
             line-height: 24px;
-            color: #4e4e4e;
+            color: $text-secondary;
         }
         .text-desc {
-            font-family: Open Sans;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 18px;
+            @include font-face($font-opensans, 1.8rem);
             line-height: 30px;
-            color: #3a3a3a;
+            color: $text-primary;
             .highlights {
-                font-family: Open Sans;
-                font-style: normal;
-                font-weight: 600;
-                font-size: 18px;
+            @include font-face($font-opensans, 1.8rem, 700);
                 line-height: 30px;
-                color: #040404;
+                color: $primary-black;
             }
         }
     }
