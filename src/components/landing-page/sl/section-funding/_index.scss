@@ -1,0 +1,130 @@
+.ds-funding {
+    padding-top: 80px;
+    &-startup {
+        padding-bottom: 82px;
+        .wrapping-box {
+            background: #ffffff;
+            box-shadow: 0px 0px 20px #eaeaea;
+            border-radius: 20px;
+            width: 100%;
+            height: fit-content;
+            padding: 42px 48px;
+            // grid-template-columns: repeat(6, 1fr);
+            // grid-row: auto;
+            max-width: 1110px;
+            // display: grid;
+            // background-color: #000;
+            // grid-gap: 1px;
+            .mini-box {
+                height: 90px;
+                max-width: 180px;
+                min-width: 130px;
+                margin: 0 -1px -1px 0;
+                // border: 1px solid rgb(97, 97, 97);
+                &::before {
+                    content: "";
+                    position: absolute;
+                    // match the grid gap for border thickness
+                    top: -1px;
+                    right: -1px;
+                    bottom: -1px;
+                    left: -1px;
+                    // this becomes the border, and handles overlap
+                    background-color: #ddd;
+                }
+            }
+            .border-btm {
+                border-bottom: 1px solid #f4f4f4;
+            }
+            .border-right {
+                border-right: 1px solid #f4f4f4;
+            }
+        }
+    }
+    .desc {
+        font-family: Open Sans;
+        z-index: 101;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+        max-width: 350px;
+        color: #000000;
+        margin-bottom: 40px;
+    }
+    .number {
+        z-index: 101;
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 65px;
+        text-align: center;
+        color: #000000;
+    }
+}
+
+.grid {
+    background: #ffffff;
+    // box-shadow: 0px 0px 20px #eaeaea;
+    // border-radius: 20px;
+    // width: 100%;
+    // height: fit-content;
+    // padding: 42px 48px;
+    // grid-template-columns: repeat(6, 1fr);
+    // grid-row: auto;
+    max-width: 1014px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+
+    // prevents ::before borders from looking offset if not enough cells
+    grid-gap: 1px;
+    // remove the edge borders
+    overflow: hidden;
+}
+
+.grid-cell {
+    position: relative;
+
+    // create the illusion of a border
+    &::before {
+        content: "";
+        position: absolute;
+        // match the grid gap for border thickness
+        top: -1px;
+        right: -1px;
+        bottom: -1px;
+        left: -1px;
+        // this becomes the border, and handles overlap
+        background-color: #f4f4f4;
+    }
+}
+
+.cell-content {
+    height: 106px;
+    max-width: 180px;
+    min-width: 130px;
+    position: relative;
+    // fill in the cell color
+    background-color: #fff;
+}
+.img {
+    max-height: 56px;
+}
+.funding {
+    @extend .img;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    max-width: 40px;
+    /* identical to box height */
+
+    text-align: center;
+
+    /* Text - Secondary */
+
+    color: #4e4e4e;
+}

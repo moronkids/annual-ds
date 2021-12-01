@@ -9,7 +9,7 @@ import Body from "src/components/layouts/body";
 //redux
 // import { Provider, useDispatch } from "react-redux";
 // import { store } from "redux/index";
-import { AppWrapper } from "providers";
+// import { AppWrapper } from "pages";
 // import Head from "next/head";
 // import Sidebar from "components/mobile/layouts/sidebar";
 import NProgress from "nprogress";
@@ -32,13 +32,13 @@ Router.events.on("routeChangeError", () => NProgress.done());
 const MyApp = ({ Component, pageProps }) => {
   return (
     <>
-      <AppWrapper>
-        <HeadersWeb />
-        <Body>
-          <Component {...pageProps} />
-        </Body>
-        <Footers />
-      </AppWrapper>
+      {/* <AppWrapper> */}
+      <HeadersWeb />
+      <Body>
+        <Component {...pageProps} />
+      </Body>
+      <Footers />
+      {/* </AppWrapper> */}
     </>
   );
 };

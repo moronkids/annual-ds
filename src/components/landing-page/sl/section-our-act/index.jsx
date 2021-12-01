@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 function Index() {
   return (
-    <>
+    <div>
       <div className="ds-container d-flex justify-content-centner align-items-center mx-auto">
         <div className="ds-our-act w-100">
           <div className="col-12 w-100 d-md-flex d-block justify-content-between">
@@ -15,18 +15,18 @@ function Index() {
                 <div
                   className="img position-absolute"
                   style={{ zIndex: "100" }}
-                ></div>
+                />
                 <div className="wrapping position-absolute">
                   <>
                     <div className="number">6.636</div>
                     <div className="desc">
-                      Hours of engagement with  startup communities
+                      Hours of engagement with startup communities
                     </div>
                   </>
                   <>
                     <div className="number">594.760</div>
                     <div className="desc">
-                      Startup enthusiast come together  to our event
+                      Startup enthusiast come together to our event
                     </div>
                   </>
                   <>
@@ -38,7 +38,7 @@ function Index() {
                   <>
                     <div className="number">1.535</div>
                     <div className="desc">
-                      Founders and entrepreneurs joined  our accelerator and
+                      Founders and entrepreneurs joined our accelerator and
                       incubation programs
                     </div>
                   </>
@@ -48,7 +48,7 @@ function Index() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
