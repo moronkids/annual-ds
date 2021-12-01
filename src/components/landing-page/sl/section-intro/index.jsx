@@ -1,7 +1,7 @@
 import React from "react";
 import BlankImg from "styles/assets/blank-img-intro.svg";
 import Image from "next/image";
-import Btn from "src/components/landing-page/section-intro/button";
+import Btn from "src/components/landing-page/sl/section-intro/button";
 function index() {
   return (
     <div className="ds-section-intro col-12 d-flex flex-md-row flex-column my-auto">
