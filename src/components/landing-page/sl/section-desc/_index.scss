@@ -1,0 +1,57 @@
+.ds-section-desc {
+    min-height: 818px;
+    background: linear-gradient(180deg, #f2f7f7 58.39%, rgba(242, 247, 247, 0) 100%);
+    width: 100%;
+    padding-top: 106px;
+    .act {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 50px;
+        text-align: center;
+        color: #040404;
+        padding-top: 80px;
+    }
+    &-content {
+        // margin-top: 106px;
+        gap: 65px;
+        max-width: 920px;
+        height: fit-content;
+        min-height: 380px;
+        border-bottom: 1px solid #cecece;
+
+        #name-person {
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 22px;
+            color: #3a3a3a;
+        }
+        #title-person {
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 24px;
+            color: #4e4e4e;
+        }
+        .text-desc {
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 30px;
+            color: #3a3a3a;
+            .highlights {
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 30px;
+                color: #040404;
+            }
+        }
+    }
+}
