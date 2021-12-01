@@ -2,10 +2,10 @@
 import React, { createContext, useEffect, useState } from "react";
 import App, { Container } from "next/app";
 // import "../styles/scss/styles.scss";
-import HeadersWeb from "components/layouts/header";
+import HeadersWeb from "src/components/layouts/header";
 // import HeadersMobile from "components/mobile/layouts/headers";
-import Footers from "components/layouts/footer";
-import Body from "components/layouts/body";
+import Footers from "src/components/layouts/footer";
+import Body from "src/components/layouts/body";
 //redux
 // import { Provider, useDispatch } from "react-redux";
 // import { store } from "redux/index";
@@ -15,7 +15,7 @@ import { AppWrapper } from "providers";
 import NProgress from "nprogress";
 import Router from "next/router";
 import "styles/nprogress.css";
-import "styles/scss/bootstrap.scss";
+import "src/assets/scss/base/bootstrap.scss";
 NProgress.configure({
   minimum: 0.3,
   easing: "ease",

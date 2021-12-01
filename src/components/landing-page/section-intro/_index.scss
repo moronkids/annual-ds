@@ -1,0 +1,50 @@
+.ds-section-intro {
+    min-height: 593px;
+    width: 100%;
+    padding-top: 80px;
+    .left-side {
+        .text-annual {
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 27px;
+            text-align: left;
+            color: #4e4e4e;
+        }
+        .text-desc {
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 48px;
+            line-height: 60px;
+            color: #040404;
+            max-width: 570px;
+            width: 100%;
+        }
+    }
+    &-btn {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 13px 29.5px;
+        background: #005f61;
+        border-radius: 4px;
+        width: fit-content;
+        margin-top: 48px;
+        //font
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        letter-spacing: 0.01em;
+        color: #ffffff;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        // margin: 0px 10px;
+    }
+}
