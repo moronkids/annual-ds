@@ -1,0 +1,40 @@
+*, *:after, *:before {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  &::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+  }
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/**
+ * Remove default margin.
+ */
+ :root {
+  font-size: 62.5%;
+  body {
+    margin: 0;
+    background: #FAFAFA;
+  }
+}
+
+%clearfix {
+  *zoom: 1;
+  &:before, 
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}

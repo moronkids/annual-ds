@@ -3,6 +3,10 @@
 # Learn more about .gitignore:
 #     https://www.atlassian.com/git/tutorials/saving-changes/gitignore
 
+# Next compile files
+.next/
+.next/cache/
+
 # Node artifact files
 node_modules/
 dist/

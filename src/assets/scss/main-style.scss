@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+// Bootstrap
+@import '~bootstrap';
+
+// Base
+@import 'base/index';
+
+// Themes
+@import 'themes/index';
+
+// Helpers
+@import 'helpers';
+
+// Layouts
+@import "/src/components/layouts/layout";
+
+// Pages
+@import "/src/components/landing-page/landingpage";
