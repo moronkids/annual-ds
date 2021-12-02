@@ -12,10 +12,7 @@ function Index() {
             </div>
             <div className="col-md  col-12 position-relative float-right">
               <div className="ds-our-act-boxAct position-relative">
-                <div
-                  className="img position-absolute"
-                  style={{ zIndex: "100" }}
-                />
+                <div className="position-absolute" style={{ zIndex: "100" }} />
                 <div className="wrapping position-absolute">
                   <>
                     <div className="number">6.636</div>
