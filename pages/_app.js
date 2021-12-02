@@ -15,7 +15,9 @@ import Body from "src/components/layouts/body";
 import NProgress from "nprogress";
 import Router from "next/router";
 import "styles/nprogress.css";
-import "src/assets/scss/base/bootstrap.scss";
+// import "src/assets/scss/base/bootstrap/bootstrap.scss";
+import "src/assets/scss/main-style.scss";
+
 NProgress.configure({
   minimum: 0.3,
   easing: "ease",
