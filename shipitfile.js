@@ -10,7 +10,7 @@ module.exports = (shipit) => {
       repositoryUrl: "git@bitbucket.org:dsn-js/annual-landing-next.git",
       keepReleases: 3,
       //   key: "~/.ssh/config",
-      branch: "development",
+      branch: "feature/sulis",
     },
     staging: {
       servers: "root@137.59.126.106:8039",
