@@ -27,30 +27,31 @@ function Index(props) {
       >
         <div className="col-md-auto col-12">
           <Image src={Person} />
-          <p id="name-person" className="p-0 m-0">
-            {props.person}
-          </p>
-          <p id="title-person" className="p-0 m-0">
-            {props.title}
-          </p>
+          <div
+            id="name-person"
+            className="p-0 m-0"
+            dangerouslySetInnerHTML={{ __html: props.person }}
+          ></div>
+          <div
+            id="title-person"
+            className="p-0 m-0"
+            dangerouslySetInnerHTML={{ __html: props.title }}
+          >
+            {/* {props.title} */}
+          </div>
         </div>
         <div className="col-md col-12 text-desc">
-          <p>
-            {/* “2021 is not about adapting anymore, it’s time for us to move
-            forward, strengthen our foundation, to connect, and to innovate
-            more. Within a year, I have to say all of the endeavours and
-            dedication we have invested will only lead us into further
-            improvements. We have done and improve so much, holding one purpose,
-            our dream in DailySocial.id to help as many founders and
-            entrepreneurs navigate technology and innovation, and this is one of
-            those times where we make our dreams come true.” */}
-            {props.data}
-          </p>
-          <p className="highlights">
-            {/* Here it is what we did in 2021 to make technology and innovation
-            available for all! */}
-            {props.afterData}
-          </p>
+          <p>{props.data}</p>
+          {props.afterDataHTML === true ? (
+            <div
+              className="highlights"
+              dangerouslySetInnerHTML={{
+                __html: props.afterData,
+              }}
+            ></div>
+          ) : (
+            <div className="highlights">{props.afterData}</div>
+          )}
         </div>
       </div>
 

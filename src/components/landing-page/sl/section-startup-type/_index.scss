@@ -1,0 +1,43 @@
+.ds-startup-type {
+    padding: 60px 0;
+    .wrapup {
+        .img {
+            max-width: 475px;
+            max-height: 400px;
+        }
+        .desc {
+            max-width: 540px;
+            width: 100%;
+            &-title {
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 36px;
+                line-height: 50px;
+                color: #040404;
+            }
+            &-content {
+                padding-top: 12px;
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 30px;
+                color: #3a3a3a;
+            }
+            &-date {
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 26px;
+                text-align: left;
+                color: #4e4e4e;
+                flex: none;
+                order: 1;
+                flex-grow: 0;
+                margin: 28px 0px;
+            }
+        }
+    }
+}
