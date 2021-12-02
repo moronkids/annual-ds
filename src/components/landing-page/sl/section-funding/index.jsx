@@ -6,16 +6,16 @@ function Index() {
     <div className="ds-container d-flex justify-content-center align-items-center mx-auto">
       <div className="ds-funding w-100 d-flex flex-column justify-content-center align-items-center mx-auto text-center">
         <div
-          className="col-12 d-flex justify-content-center align-items-center"
+          className="col-12 d-md-flex d-block justify-content-center align-items-center"
           style={{ gap: "30px" }}
         >
-          <div className="col-6 d-flex justify-content-end">
+          <div className="col-md-6 col-12 d-flex justify-content-md-end justify-content-center">
             <div>
               <p className="number">$4.1bio+</p>
               <p className="desc">Total disclosed startup funding in 2021*</p>
             </div>
           </div>
-          <div className="col-6 d-flex justify-content-start">
+          <div className="col-md-6 col-12 d-flex justify-content-md-start justify-content-center">
             <div>
               <p className="number">191</p>
               <p className="desc">

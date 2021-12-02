@@ -5,15 +5,7 @@ import Image from "next/image";
 export default class AutoPlayMethods extends Component {
   constructor(props) {
     super(props);
-    // this.play = this.play.bind(this);
-    // this.pause = this.pause.bind(this);
   }
-  //   play() {
-  //     this.slider.slickPlay();
-  //   }
-  //   pause() {
-  //     this.slider.slickPause();
-  //   }
   render() {
     const settings = {
       slidesToShow: 7,
@@ -24,7 +16,33 @@ export default class AutoPlayMethods extends Component {
       infinite: true,
       pauseOnHover: true,
       cssEase: "linear",
-      easing: "liniear",
+      easing: "linear",
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: this.props.slidesToScroll < 0 ? -3 : 3,
+            infinite: true,
+            dots: true,
+          },
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: this.props.slidesToScroll < 0 ? -2 : 2,
+            initialSlide: 2,
+          },
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: this.props.slidesToScroll < 0 ? -1 : 1,
+          },
+        },
+      ],
     };
     return (
       <>
@@ -36,11 +54,11 @@ export default class AutoPlayMethods extends Component {
                   class="slide"
                   style={{
                     width: "100%",
-                    minHeight: "200px",
-                    maxHeight: "255px",
+                    minWidth: "255px",
+                    maxWidth: "255px",
                     height: "100%",
+                    minHeight: "160px",
                     maxHeight: "160px",
-                    minHeight: "100px",
                     borderRadius: "10px",
                     overflow: "hidden",
                   }}
@@ -49,7 +67,7 @@ export default class AutoPlayMethods extends Component {
                   <Image
                     src={DummyImg}
                     layout="responsive"
-                    objectFit="cover"
+                    objectFit="contains"
                     style={{
                       borderRadius: "10px",
                     }}
@@ -59,14 +77,6 @@ export default class AutoPlayMethods extends Component {
             );
           })}
         </Slider>
-        {/* <div style={{ textAlign: "center" }}>
-          <button className="button" onClick={this.play}>
-            Play
-          </button>
-          <button className="button" onClick={this.pause}>
-            Pause
-          </button>
-        </div> */}
       </>
     );
   }

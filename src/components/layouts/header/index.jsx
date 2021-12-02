@@ -20,7 +20,7 @@ function index() {
           </div>
         </div>
       </div>
-      <hr className="p-0 m-0" style={{ color: "#F4F4F4" }} />
+      <hr className="p-0 m-0 line-btm" />
     </>
   );
 }

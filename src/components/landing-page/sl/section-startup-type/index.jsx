@@ -7,11 +7,11 @@ function Index(props) {
       <div className="ds-startup-type">
         <div className="ds-container d-flex mx-auto w-100">
           <div
-            className={`wrapup col-12 d-flex justify-content-between flex-row${
-              props.reverse && "-reverse"
+            className={`wrapup col-12 d-flex flex-column-reverse justify-content-between flex-md-row${
+              props.reverse ? "-reverse" : ""
             }`}
           >
-            <div className="col-auto desc">
+            <div className="col-md-auto col-12 desc">
               <div className="desc-title">
                 In 2021 Indonesia have 11 Unicorn*
               </div>
@@ -21,7 +21,7 @@ function Index(props) {
               </div>
               <div className="desc-date">*per mid Nov 2021</div>
             </div>
-            <div className="col img">
+            <div className="col-md col-12 img">
               <Image src={BlankImg} />
             </div>
           </div>

@@ -21,11 +21,11 @@ function Index(props) {
       <div
         className={`ds-container ds-section-desc-content col-12 d-flex flex-md${
           props.reverse ? "-row-reverse " : "-row "
-        } flex-column${
-          props.reverse ? "-reverse " : " "
-        } justify-content-center w-100 mx-auto`}
+        } justify-content-center w-100 mx-auto flex-column${
+          !props.reverse ? "-reverse " : " "
+        }`}
       >
-        <div className="col-md-auto col-12">
+        <div className="col-md-auto col-12 text-md-left text-center">
           <Image src={Person} />
           <div
             id="name-person"

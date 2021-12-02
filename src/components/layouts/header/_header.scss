@@ -1,7 +1,7 @@
 .ds-header {
     height: 84px;
     width: 100%;
-
+    box-shadow: 0px 0px 4px #e5e5e5;
     .iconDS {
         img {
             height: 44px;
@@ -39,4 +39,8 @@
             }
         }
     }
+}
+.line-btm {
+    box-shadow: 0px 0px 4px #e5e5e5;
+    color: #e8e8e8;
 }

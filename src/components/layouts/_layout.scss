@@ -5,6 +5,6 @@
 .ds-container {
     max-width: 1110px;
     @include xl {
-        margin: 0 20px !important;
+        padding: 0 16px !important;
     }
 }

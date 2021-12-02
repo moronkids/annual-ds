@@ -1,5 +1,8 @@
 .ds-startup-type {
     padding: 60px 0;
+    @include sm {
+        padding: 60px 0px 0px 0px;
+    }
     .wrapup {
         .img {
             max-width: 475px;
@@ -15,6 +18,11 @@
                 font-size: 36px;
                 line-height: 50px;
                 color: #040404;
+                @include sm {
+                    padding-top: 2.8rem;
+                    font-size: 2.4rem;
+                    line-height: 3.6rem;
+                }
             }
             &-content {
                 padding-top: 12px;
@@ -24,6 +32,10 @@
                 font-size: 18px;
                 line-height: 30px;
                 color: #3a3a3a;
+                @include sm {
+                    font-size: 1.6rem;
+                    line-height: 2.8rem;
+                }
             }
             &-date {
                 font-family: Open Sans;
@@ -37,6 +49,10 @@
                 order: 1;
                 flex-grow: 0;
                 margin: 28px 0px;
+                @include sm {
+                    font-size: 1.6rem;
+                    line-height: 2.8rem;
+                }
             }
         }
     }

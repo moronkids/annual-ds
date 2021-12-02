@@ -3,6 +3,9 @@
     background: linear-gradient(180deg, #f2f7f7 58.39%, rgba(242, 247, 247, 0) 100%);
     width: 100%;
     padding-top: 106px;
+    @include sm {
+        padding-top: 60px;
+    }
     .act {
         font-family: Open Sans;
         font-style: normal;
@@ -12,6 +15,10 @@
         text-align: center;
         color: #040404;
         padding-top: 80px;
+        @include sm {
+            font-size: 2.4rem;
+            padding-top: 60px;
+        }
     }
     &-content {
         // margin-top: 106px;
@@ -20,7 +27,9 @@
         height: fit-content;
         min-height: 380px;
         border-bottom: 1px solid #cecece;
-
+        @include sm {
+            padding-bottom: 60px !important;
+        }
         #name-person {
             @include font-face($font-opensans, 1.6rem, 700);
             line-height: 22px;
@@ -35,10 +44,16 @@
             @include font-face($font-opensans, 1.8rem);
             line-height: 30px;
             color: $text-primary;
+            @include sm {
+                @include font-face($font-opensans, 1.6rem);
+            }
             .highlights {
-            @include font-face($font-opensans, 1.8rem, 700);
+                @include font-face($font-opensans, 1.8rem, 700);
                 line-height: 30px;
                 color: $primary-black;
+                @include sm {
+                    @include font-face($font-opensans, 1.6rem, 600);
+                }
             }
         }
     }

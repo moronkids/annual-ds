@@ -12,7 +12,7 @@ function index() {
         </p>
         <Btn />
       </div>
-      <div className="col-md-5 col-12 text-md-right text-center ">
+      <div className="img col-md-5 col-12 text-md-right text-center ">
         <Image src={BlankImg}></Image>
       </div>
     </div>
