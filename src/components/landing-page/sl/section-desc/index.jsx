@@ -66,7 +66,12 @@ function Index(props) {
           )}
         </div>
       </div>
-
+      <hr
+        className="d-sm-none d-block text-center mx-auto"
+        style={{
+          width: "90%",
+        }}
+      />
       {props.slide && (
         <>
           <div className="d-flex  justify-content-center mx-auto w-100">

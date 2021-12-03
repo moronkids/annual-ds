@@ -68,6 +68,7 @@ export default class AutoPlayMethods extends Component {
                     src={DummyImg}
                     layout="responsive"
                     objectFit="contains"
+                    quality={100}
                     style={{
                       borderRadius: "10px",
                     }}

@@ -28,6 +28,7 @@
         min-height: 380px;
         border-bottom: 1px solid #cecece;
         @include sm {
+            border-bottom: none;
             gap: 28px;
             // padding-bottom: 60px !important;
         }

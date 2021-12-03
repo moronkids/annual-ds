@@ -22,7 +22,7 @@ function Index(props) {
               <div className="desc-date">*per mid Nov 2021</div>
             </div>
             <div className="col-md col-12 img">
-              <Image src={BlankImg} />
+              <Image src={BlankImg} quality={100} />
             </div>
           </div>
         </div>

@@ -14,7 +14,7 @@ function index() {
         <Btn />
       </div>
       <div className="img col-md-5 col-12 text-md-right text-center ">
-        <Image src={HeroIntro}></Image>
+        <Image src={HeroIntro} quality={100}></Image>
       </div>
     </div>
   );

@@ -44,6 +44,7 @@ function Index() {
                             className="d-flex justify-content-center align-items-center"
                             src={val.img}
                             layout="fill"
+                            quality={100}
                           />
                         </div>
                         <div className="funding col-6 d-flex justify-content-center align-items-center">

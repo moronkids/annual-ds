@@ -1,5 +1,8 @@
 .ds-funding {
     padding-top: 80px;
+    @include sm {
+        padding-top: 60px;
+    }
     &-startup {
         padding-bottom: 82px;
         .wrapping-box {
