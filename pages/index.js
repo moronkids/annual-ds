@@ -10,9 +10,16 @@ import SectionIntro from "src/components/landing-page/sl/section-intro";
 import SectionDesc from "src/components/landing-page/sl/section-desc";
 import SectionAct from "src/components/landing-page/sl/section-our-act";
 import SectionStartUp from "src/components/landing-page/sl/section-startup-type";
+import { SectionGadget, SectionPartners } from "src/components/landing-page";
+
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
+      <Head>
+        <title>Dailysocial - Annual Report 2021</title>
+        <link rel="icon" href="/favicon.png" />
+      </Head>
+
       <div className="ds-container d-flex flex-column mx-auto">
         <SectionIntro />
       </div>
@@ -36,6 +43,11 @@ export default function Home() {
       />
       <SectionStartUp reverse={false} />
       <SectionStartUp reverse={true} />
+      <SectionDesc />
+
+      <SectionGadget />
+
+      <SectionPartners />
     </div>
   );
 }
