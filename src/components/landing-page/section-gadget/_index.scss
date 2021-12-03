@@ -1,0 +1,129 @@
+.ds-section-gadget {
+  padding: 100px 0;
+  background: linear-gradient(180deg, #012A2B 0%, #040404 22.7%, #040404 100%);
+  @include md() {
+    padding: 60px 0;
+  }
+
+  p {
+    font-family: $font-opensans;
+    color: $white;
+  }
+
+  &__content {
+    max-width: 920px;
+    gap: 65px;
+    margin: 0 auto;
+       
+    &-bod {
+      position: relative;
+      &::after {
+        content: "";
+        position: relative;
+        display: inline-block;
+        width: 90%;
+        padding-bottom: 80px;
+        margin-bottom: 100px;
+        border-bottom: 1px solid $text-primary;
+        @include md() {
+          padding-bottom: 60px;
+          margin-bottom: 60px;
+        }
+      }
+      &-text {
+        @include font-face($font-opensans, 1.8rem);
+        line-height: 30px;
+        margin-bottom: 36px;
+        @include md() {
+          font-size: 1.6rem;
+          line-height: 25px;
+        }
+      }
+
+      &-detail {
+        @include md() {
+          padding: 0 16px;
+        }
+        &-photo {
+          @include md() {
+            margin-bottom: 28px;
+            text-align: center;
+          }
+        }
+
+        &-name {
+          @include font-face($font-opensans, 1.8rem, 700);
+          line-height: 25px;
+          margin-bottom: 4px;
+          @include md() {
+            font-size: 1.6rem;
+            line-height: 20px;
+          }
+        }
+
+        &-position {
+          @include font-face($font-opensans, 1.6rem);
+          line-height: 21px;
+          @include md() {
+            font-size: 1.4rem;
+            line-height: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  &__devices {
+    &-title {
+      margin-bottom: 80px;
+      &-main {
+        @include font-face($font-opensans, 3.6rem, 700);
+        line-height: 50px;
+        margin-bottom: 12px;
+        @include md() {
+          font-size: 2.4rem;
+          line-height: 30px;
+        }
+      }
+
+      &-sub {
+        @include font-face($font-opensans, 1.8rem);
+        line-height: 30px;
+        @include md() {
+          font-size: 1.6rem;
+          line-height: 28px;
+        }
+      }
+    }
+
+    &-item {
+      @include md() {
+        margin-bottom: 40px;
+      }
+      &-wrapper {
+        gap: 95px;
+        @include md() {
+          gap: 0;
+        }
+      }
+      &-images {
+        height: 184px;
+        margin-bottom: 12px;
+        background: url('../../../assets/images/pattern/pattern-devices.png') 0 100%/contain no-repeat;
+        @include md() {
+          > div {
+            width: 90% !important; 
+          }
+        }
+      }
+
+      &-name {
+        @include font-face($font-opensans, 2rem, 600);
+        line-height: 27px;
+        @include md() {
+          font-size: 1.6rem;
+        }
+      }
+    }
+  }
+}

@@ -3,14 +3,14 @@
 // Bootstrap
 @import '~bootstrap';
 
-// Base
-@import 'base';
-
 // Themes
 @import 'themes';
 
 // Helpers
 @import 'helpers';
+
+// Base
+@import 'base';
 
 // Layouts
 @import "/src/components/layouts/layout";
