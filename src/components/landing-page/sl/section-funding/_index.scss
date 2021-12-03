@@ -117,9 +117,9 @@
     // fill in the cell color
     background-color: #fff;
 }
-.img {
-    max-height: 56px;
-}
+// .img {
+//     max-height: 56px;
+// }
 .funding {
     @extend .img;
     font-family: Open Sans;
@@ -127,7 +127,7 @@
     font-weight: 600;
     font-size: 14px;
     line-height: 19px;
-    max-width: 40px;
+    max-width: 55px;
     /* identical to box height */
 
     text-align: center;

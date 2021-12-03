@@ -1,6 +1,7 @@
 import React from "react";
 import Xendit from "styles/assets/icons/company/xendit.svg";
 import Image from "next/image";
+import { startup } from "src/helpers/dummy-data/datastartup";
 function Index() {
   return (
     <div className="ds-container d-flex justify-content-center align-items-center mx-auto">
@@ -27,7 +28,7 @@ function Index() {
         <div className="ds-funding-startup ds-container w-100">
           <div className="wrapping-box">
             <div className="grid">
-              {[...Array(24)].map((val, i) => {
+              {startup.map((val, i) => {
                 return (
                   <>
                     <div class="grid-cell">
@@ -35,18 +36,18 @@ function Index() {
                         <div
                           className="img position-relative col-6 d-flex mx-auto"
                           style={{
-                            width: "96px",
-                            height: "28px",
+                            width: val.w + "px",
+                            height: val.h + "px",
                           }}
                         >
                           <Image
                             className="d-flex justify-content-center align-items-center"
-                            src={Xendit}
+                            src={val.img}
                             layout="fill"
                           />
                         </div>
                         <div className="funding col-6 d-flex justify-content-center align-items-center">
-                          $41 mio
+                          {val.fund}
                         </div>
                       </div>
                     </div>

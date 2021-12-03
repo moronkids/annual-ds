@@ -28,7 +28,8 @@
         min-height: 380px;
         border-bottom: 1px solid #cecece;
         @include sm {
-            padding-bottom: 60px !important;
+            gap: 28px;
+            // padding-bottom: 60px !important;
         }
         #name-person {
             @include font-face($font-opensans, 1.6rem, 700);
@@ -44,6 +45,9 @@
             @include font-face($font-opensans, 1.8rem);
             line-height: 30px;
             color: $text-primary;
+            @include md {
+                padding-bottom: 30px;
+            }
             @include sm {
                 @include font-face($font-opensans, 1.6rem);
             }

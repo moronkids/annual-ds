@@ -6,11 +6,11 @@ function Index() {
       <div className="ds-container d-flex justify-content-centner align-items-center mx-auto">
         <div className="ds-our-act w-100">
           <div className="col-12 w-100 d-md-flex d-block justify-content-between">
-            <div className="col-md-auto col-12 ds-our-act-desc">
+            <div className="col-md-auto col-12 ds-our-act-desc p-md-0 py-4">
               We are here to democratize access, knowledge for technology and
               innovation through startup entrepreneurship
             </div>
-            <div className="col-md  col-12 position-relative float-right">
+            <div className="col-md  col-12 position-relative justify-content-md-end d-flex mx-auto justify-content-center">
               <div className="ds-our-act-boxAct position-relative">
                 <div
                   className="img position-absolute"
