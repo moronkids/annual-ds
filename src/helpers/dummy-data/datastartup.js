@@ -5,7 +5,7 @@ import Bibit from "styles/assets/icons/company/Bibit.png";
 import Bukukas from "styles/assets/icons/company/Bukukas.png";
 import Bukuwarung from "styles/assets/icons/company/Bukuwarung.png";
 import Gojek from "styles/assets/icons/company/Goto.png";
-import GudangAda from "styles/assets/icons/company/GudangAda.png";
+import GudangAda from "styles/assets/icons/company/Gudangada.png";
 import Halodoc from "styles/assets/icons/company/Halodoc.png";
 import HappyFresh from "styles/assets/icons/company/HappyFresh.png";
 import Kredivo from "styles/assets/icons/company/Kredivo.png";
