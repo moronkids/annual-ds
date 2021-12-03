@@ -1,7 +1,16 @@
 import React from "react";
 import Image from "next/image";
 import BlankImg from "styles/assets/blank-img-intro.svg";
+import Centaur from "styles/assets/Centaur.png";
+import Unicorn from "styles/assets/Unicorn.png";
 function Index(props) {
+  const decidePhoto = (val) => {
+    if (val === "unicorn") {
+      return Unicorn;
+    } else {
+      return Centaur;
+    }
+  };
   return (
     <>
       <div className="ds-startup-type">
@@ -22,7 +31,7 @@ function Index(props) {
               <div className="desc-date">*per mid Nov 2021</div>
             </div>
             <div className="col-md col-12 img">
-              <Image src={BlankImg} quality={100} />
+              <Image src={decidePhoto(props.startuptype)} quality={100} />
             </div>
           </div>
         </div>

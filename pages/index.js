@@ -41,12 +41,9 @@ export default function Home() {
         afterDataHTML={datafund.afterDataHTML}
         photo={datafund.photo}
       />
-      <SectionStartUp reverse={false} />
-      <SectionStartUp reverse={true} />
-      <SectionDesc />
-
+      <SectionStartUp reverse={false} startuptype={"unicorn"} />
+      <SectionStartUp reverse={true} startuptype={"centaur"} />
       <SectionGadget />
-
       <SectionPartners />
     </div>
   );
