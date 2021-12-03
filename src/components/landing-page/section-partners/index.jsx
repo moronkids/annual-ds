@@ -8,6 +8,8 @@ import {
   img25, img26, img27, img28, img29, img30, img31, img32, img33, 
 } from "../../../assets/images/logo";
 
+import journey from "../../../assets/images/illustration/journey.png";
+
 export default function Index() {
   
   return (
@@ -15,7 +17,7 @@ export default function Index() {
       <div className="ds-section-partners__clients">
         <div className="container">
           <div className="row justify-content-center text-center">
-            <div className="col-md-10">
+            <div className="ds-container">
               <p className="ds-section-partners__clients-title">Partners and supporters </p>
 
               <div className="ds-section-partners__clients-list">
@@ -94,9 +96,15 @@ export default function Index() {
 
       <div className="ds-section-partners__journey">
         <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-md-10">
-              
+          <div className="row justify-content-center ds-section-partners__journey-inner">
+            <div className="col-md-auto">
+              <Image src={journey}></Image>
+            </div>
+            <div className="col-md">
+              <p className="ds-section-partners__journey-title">Eager to be part of our journey?</p>
+              <p className="ds-section-partners__journey-desc">Let’s get in touch and discuss further about the future of<br /> 
+              Indonesian startup ecosystem!</p>
+              <a href="https://dailysocial.id/" target="_blank" className="ds-button"><span>Get connected</span></a>
             </div>
           </div>
         </div>

@@ -42,9 +42,74 @@
     &__journey {
       position: relative;
       padding: 40px 95px;
-      background: $green2;
-      border: 1px solid #E5EFEF;
       border-radius: 20px;
+
+      &-inner {
+        max-width: 790px;
+        gap: 60px;
+        margin: 0 auto;
+      }
+
+      &-title {
+        @include font-face($font-opensans, 2.8rem, 700);
+        color: $primary-black;
+        line-height: 42px;
+        margin-bottom: 12px;
+      }
+
+      &-desc {
+        @include font-face($font-opensans, 1.8rem);
+        color: $text-secondary;
+        line-height: 30px;
+        margin-bottom: 28px;        
+      }
+    }
+
+
+    // BUTTON
+    .ds-button {
+      position: relative;
+      display: inline-block;
+      min-width: 180px;
+      border: 2px solid $green;
+      border-radius: 4px;
+      background: $green;
+      text-decoration: none;
+      @include font-face($font-opensans, 1.6rem, 600);
+      padding: 11px 20px;
+      span {
+        position: relative;
+        color: $white;
+        z-index: 2;
+        transition: .5s all ease-in-out;
+      }
+      &:hover {
+        span {
+          color: $green;
+        }
+        &::before {
+          width: 100%;
+        }
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background: $white;
+        transition: .2s all ease-in-out;
+      }
+      &::after {
+        content: "";
+        position: relative;
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        background: url('../../../assets/images/icons/arrow-right.png') 0 0/cover no-repeat;
+        margin-left: 15px;
+      }
     }
   }
 
@@ -52,7 +117,9 @@
     &-bod {
       max-width: 920px;
       gap: 65px;
-      margin: 0 auto;
+      margin: 0 auto 80px;
+      padding-bottom: 94px;
+      border-bottom: 1px solid #CECECE;
       &-detail {
         &-desc {
           @include font-face($font-opensans, 1.8rem);
