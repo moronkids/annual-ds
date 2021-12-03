@@ -3,6 +3,7 @@ import Image from "next/image";
 import BlankImg from "styles/assets/blank-img-intro.svg";
 import Centaur from "styles/assets/Centaur.png";
 import Unicorn from "styles/assets/Unicorn.png";
+import Slide from "react-reveal/Slide";
 function Index(props) {
   const decidePhoto = (val) => {
     if (val === "unicorn") {
@@ -20,19 +21,23 @@ function Index(props) {
               props.reverse ? "-reverse" : ""
             }`}
           >
-            <div className="col-md-auto col-12 desc">
-              <div className="desc-title">
-                In 2021 Indonesia have 11 Unicorn*
+            <Slide top>
+              <div className="col-md-auto col-12 desc">
+                <div className="desc-title">
+                  In 2021 Indonesia have 11 Unicorn*
+                </div>
+                <div className="desc-content">
+                  Unicorn startups grow so fast in Indonesia. Per November 2021,
+                  we’ve got 7 new unicorn startups! Who's the next unicorn?
+                </div>
+                <div className="desc-date">*per mid Nov 2021</div>
               </div>
-              <div className="desc-content">
-                Unicorn startups grow so fast in Indonesia. Per November 2021,
-                we’ve got 7 new unicorn startups! Who's the next unicorn?
+            </Slide>
+            <Slide bottom>
+              <div className="col-md col-12 img">
+                <Image src={decidePhoto(props.startuptype)} quality={100} />
               </div>
-              <div className="desc-date">*per mid Nov 2021</div>
-            </div>
-            <div className="col-md col-12 img">
-              <Image src={decidePhoto(props.startuptype)} quality={100} />
-            </div>
+            </Slide>
           </div>
         </div>
       </div>
