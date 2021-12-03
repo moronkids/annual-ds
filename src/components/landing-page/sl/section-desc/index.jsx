@@ -1,10 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Person from "styles/assets/photo-desc-person.svg";
 import Image from "next/image";
 import Carousel from "src/components/landing-page/sl/section-desc/carousel";
 import DS_funding from "src/components/landing-page/sl/section-funding";
+import personCEO from "styles/assets/PersonCEO.png";
+import personAmir from "styles/assets/masAmir.png";
 //tes
 function Index(props) {
+  let data;
+  const decidePhoto = (val) => {
+    console.log(val, props.photo, "cek");
+    if (val === "amir") {
+      return personAmir;
+    } else {
+      return personCEO;
+    }
+  };
+  useEffect(() => {}, []);
   return (
     <div className="ds-section-desc">
       <link
@@ -26,7 +38,7 @@ function Index(props) {
         }`}
       >
         <div className="col-md-auto col-12 text-md-left text-center">
-          <Image src={Person} />
+          <Image src={decidePhoto(props.photo)} quality={100} />
           <div
             id="name-person"
             className="p-0 m-0"

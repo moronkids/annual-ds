@@ -3,5 +3,6 @@
   "afterData": "<p class=\"p-0 m-0\">Amir Karimuddin</p><p class=\"text-desc\">Chief Editor and Research DailySocial.id</p>",
   "reverse": true,
   "slide": false,
-  "afterDataHTML": true
+  "afterDataHTML": true,
+  "photo": "amir"
 }

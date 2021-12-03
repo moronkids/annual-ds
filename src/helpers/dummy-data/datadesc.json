@@ -3,5 +3,6 @@
   "afterData": "Here it is what we did in 2021 to make technology and innovation available for all!",
   "person": "<p class=\"p-0 m-0 pt-2\">Rama Mamuaya</p>",
   "title": "<p class=\"text-desc\">Founder & CEO</p>",
-  "afterDataHTML": false
+  "afterDataHTML": false,
+  "photo": "rama"
 }

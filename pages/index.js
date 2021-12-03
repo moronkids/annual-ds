@@ -23,6 +23,7 @@ export default function Home() {
         person={datadesc.person}
         title={datadesc.title}
         afterDataHTML={datadesc.afterDataHTML}
+        photo={datadesc.photo}
       />
       <SectionAct />
       <SectionDesc
@@ -31,6 +32,7 @@ export default function Home() {
         data={datafund.data}
         afterData={datafund.afterData}
         afterDataHTML={datafund.afterDataHTML}
+        photo={datafund.photo}
       />
       <SectionStartUp reverse={false} />
       <SectionStartUp reverse={true} />

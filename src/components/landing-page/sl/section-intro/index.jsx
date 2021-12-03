@@ -1,5 +1,6 @@
 import React from "react";
-import BlankImg from "styles/assets/blank-img-intro.svg";
+// import BlankImg from "styles/assets/blank-img-intro.svg";
+import HeroIntro from "styles/assets/Hero-intro.png";
 import Image from "next/image";
 import Btn from "src/components/landing-page/sl/section-intro/button";
 function index() {
@@ -13,7 +14,7 @@ function index() {
         <Btn />
       </div>
       <div className="img col-md-5 col-12 text-md-right text-center ">
-        <Image src={BlankImg}></Image>
+        <Image src={HeroIntro}></Image>
       </div>
     </div>
   );
