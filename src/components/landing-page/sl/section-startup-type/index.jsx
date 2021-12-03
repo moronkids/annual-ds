@@ -22,7 +22,7 @@ function Index(props) {
             }`}
           >
             <Slide top>
-              <div className="col-md-auto col-12 desc">
+              <div className="col-md-auto col-12 desc my-auto">
                 <div className="desc-title">
                   In 2021 Indonesia have 11 Unicorn*
                 </div>
