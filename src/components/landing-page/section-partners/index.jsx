@@ -1,6 +1,8 @@
 import React from 'react';
 import Image from "next/image";
 import arif from "../../../assets/images/photo/arif.png";
+import bell from "../../../assets/images/illustration/bell.png";
+import connect from "../../../assets/images/illustration/connect.png";
 import { 
   img1, img2, img3, img4, img5, img6, img7, img8,
   img9, img10, img11, img12, img13, img14, img15, img16, 
@@ -104,24 +106,51 @@ export default function Index() {
               <p className="ds-section-partners__journey-title">Eager to be part of our journey?</p>
               <p className="ds-section-partners__journey-desc">Let’s get in touch and discuss further about the future of<br /> 
               Indonesian startup ecosystem!</p>
-              <a href="https://dailysocial.id/" target="_blank" className="ds-button"><span>Get connected</span></a>
+              <a href="https://dailysocial.id/" target="_blank" className="ds-button"><span>Let’s subscribe</span></a>
             </div>
           </div>
         </div>
       </div>
 
 
-      <div className="ds-section-partners__what-next">
+      <div className="ds-section-partners__ecosystem">
         <div className="container">
+          <div className="row text-center">
+            <div className="col-md">
+              <p className="ds-section-partners__ecosystem-main-title">Want to get involved in Indonesia Startup Ecosystem?</p>
+            </div>
+          </div>
           <div className="row justify-content-center">
-            <div className="col-md-10">
+            <div className="col-md-12">
               <div className="row">
                 <div className="col-md-6">
+                  <div className="ds-section-partners__ecosystem-items">
+                    <div className="row">
+                      <div className="col-md">
+                        <p className="ds-section-partners__ecosystem-items-text">Get unlimited access to discover the best minds of innovation in Indonesia!</p>
 
+                        <a href="https://dailysocial.id/" target="_blank" className="ds-button"><span>Get connected</span></a>
+                      </div>
+                      <div className="col-md-auto">
+                        <Image src={bell}></Image>
+                      </div>
+                    </div>
+                  </div>
                 </div>
 
                 <div className="col-md-6">
-                  
+                  <div className="ds-section-partners__ecosystem-items">
+                    <div className="row">
+                      <div className="col-md">
+                        <p className="ds-section-partners__ecosystem-items-text">Get more experience, connections and many more for the growth of your startup</p>
+
+                        <a href="https://dailysocial.id/" target="_blank" className="ds-button"><span>Let me in</span></a>
+                      </div>
+                      <div className="col-md-auto">
+                        <Image src={connect}></Image>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

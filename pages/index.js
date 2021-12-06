@@ -10,7 +10,7 @@ import SectionIntro from "src/components/landing-page/sl/section-intro";
 import SectionDesc from "src/components/landing-page/sl/section-desc";
 import SectionAct from "src/components/landing-page/sl/section-our-act";
 import SectionStartUp from "src/components/landing-page/sl/section-startup-type";
-import { SectionGadget, SectionPartners } from "src/components/landing-page";
+import { SectionGadget, SectionPartners, SectionReaders } from "src/components/landing-page";
 
 export default function Home() {
   return (
@@ -46,6 +46,8 @@ export default function Home() {
       <SectionDesc />
 
       <SectionGadget />
+
+      <SectionReaders />
 
       <SectionPartners />
     </div>

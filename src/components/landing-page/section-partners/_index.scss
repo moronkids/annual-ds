@@ -1,6 +1,6 @@
 .ds-section {
   &-partners {
-    padding: 80px 0 100px;
+    padding-top: 80px;
     &__clients {
       margin-bottom: 100px;
       &-title {
@@ -41,7 +41,7 @@
 
     &__journey {
       position: relative;
-      padding: 40px 95px;
+      padding-bottom: 100px;
       border-radius: 20px;
 
       &-inner {
@@ -65,6 +65,28 @@
       }
     }
 
+    &__ecosystem {
+      background: $green2;
+      padding: 60px 0;
+      &-main-title {
+        @include font-face($font-opensans, 2.8rem, 700);
+        color: $primary-black;
+        line-height: 42px;
+        margin-bottom: 40px;
+      }
+
+      &-items {
+        background: #FCFCFC;
+        padding: 40px;
+        border-radius: 20px;
+        &-text {
+          @include font-face($font-opensans, 1.6rem);
+          color: $text-secondary;
+          line-height: 30px;
+          margin-bottom: 28px;
+        }
+      }
+    }
 
     // BUTTON
     .ds-button {
@@ -77,6 +99,7 @@
       text-decoration: none;
       @include font-face($font-opensans, 1.6rem, 600);
       padding: 11px 20px;
+      overflow: hidden;
       span {
         position: relative;
         color: $white;
@@ -88,7 +111,10 @@
           color: $green;
         }
         &::before {
-          width: 100%;
+          width: 150%;
+        }
+        &::after {
+          background: url('../../../assets/images/icons/arrow-right-hover.png') 0 0/cover no-repeat;
         }
       }
       &::before {
@@ -98,8 +124,12 @@
         left: 0;
         width: 0;
         height: 100%;
-        background: $white;
-        transition: .2s all ease-in-out;
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+31,ffffff+100&1+81,0+100 */
+        background: -moz-linear-gradient(left,  rgba(255,255,255,1) 70%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(left,  rgba(255,255,255,1) 70%, rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right,  rgba(255,255,255,1) 70%, rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+        transition: .4s all ease-in-out;
       }
       &::after {
         content: "";

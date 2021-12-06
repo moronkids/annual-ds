@@ -1,0 +1,46 @@
+.ds-section {
+  &-readers {
+    padding: 100px 0;
+    background: #101010;
+    &__inner {
+      gap: 95px;
+      margin-bottom: 100px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    p {
+      color: $white;
+    }
+
+    &__img {
+      &.right {
+        order: 1;
+        @include md {
+          order: 0;
+        }
+      }
+    }
+
+    &__desc {
+      &-title {
+        @include font-face($font-opensans, 3.6rem, 700);
+        line-height: 50px;
+        margin-bottom: 12px;
+      }
+
+      &-content {
+        @include font-face($font-opensans, 1.8rem);
+        line-height: 30px;
+        margin-bottom: 28px;
+      }
+
+      &-date {
+        @include font-face($font-opensans, 1.6rem);
+        line-height: 26px;
+      }
+    }
+  }
+}
