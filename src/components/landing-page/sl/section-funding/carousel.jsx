@@ -9,6 +9,7 @@ export default class SimpleSlider extends Component {
     const settings = {
       dots: true,
       infinite: false,
+      center: true,
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
