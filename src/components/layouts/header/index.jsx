@@ -14,7 +14,10 @@ function index() {
               <Image src={icons} layout="fill" alt="" srcset="" quality={100} />
             </div>
           </div>
-          <div className="btn-menu" onClick={() => setSideBar(!sidebar)}>
+          <div
+            className="btn-menu d-sm-none d-block"
+            onClick={() => setSideBar(!sidebar)}
+          >
             <div className="content d-flex justify-content-between align-items-center">
               <div>
                 <svg
