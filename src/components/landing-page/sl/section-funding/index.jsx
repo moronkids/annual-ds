@@ -69,7 +69,7 @@ function Index() {
           </div>
         </div>
         {/* <div className="testing d-sm-none d-block"> */}
-        <div className="w-100 h-100 ds-crsl-2">
+        <div className="w-100 h-100 ds-crsl-2 d-sm-none d-block">
           <Carousel />
         </div>
         {/* </div> */}
