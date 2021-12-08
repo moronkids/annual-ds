@@ -1,10 +1,13 @@
-import Image from "next/image";
 import React from 'react';
+
+// libs
+import Image from "next/image";
 import Fade from 'react-reveal/Fade';
 import Slider from "react-slick";
-// Import css files
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+
+// assets
 import {
   img1, img10, img11, img12, img13, img14, img15, img16,
   img17, img18, img19, img2, img20, img21, img22, img23, img24,
@@ -14,7 +17,6 @@ import {
 
 
 export default function Index() {
-  
   var settings = {
     mobileFirst: true,
     responsive: [

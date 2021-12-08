@@ -1,6 +1,8 @@
 import React from "react";
-import Image from "next/image";
+
+// libs
 import Fade from "react-reveal/Fade";
+
 function Index() {
   return (
     <div>

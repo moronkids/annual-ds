@@ -1,9 +1,13 @@
-import React from "react";
-import Xendit from "styles/assets/icons/company/xendit.svg";
+import React, { Fragment } from "react";
+
+// libs
 import Image from "next/image";
-import { startup } from "src/helpers/dummy-data/datastartup";
 import Fade from "react-reveal/Fade";
 import Slide from "react-reveal/Slide";
+
+// dummy
+import { startup } from "src/helpers/dummy-data/datastartup";
+
 function Index() {
   return (
     <div className="ds-container d-flex justify-content-center align-items-center mx-auto">
@@ -36,10 +40,10 @@ function Index() {
             <div className="grid">
               {startup.map((val, i) => {
                 return (
-                  <>
+                  <Fragment key={i}>
                     <Slide bottom>
-                      <div class="grid-cell">
-                        <div class="cell-content d-flex flex-column justify-content-center align-items-center">
+                      <div className="grid-cell">
+                        <div className="cell-content d-flex flex-column justify-content-center align-items-center">
                           <div
                             className="img position-relative col-6 d-flex mx-auto"
                             style={{
@@ -82,7 +86,7 @@ function Index() {
                       $41 mio
                     </div>
                   </div> */}
-                  </>
+                  </Fragment>
                 );
               })}
             </div>

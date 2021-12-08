@@ -7,7 +7,7 @@ function index() {
       <div className="ds-header d-flex mx-auto sticky-top">
         <div className="ds-container d-flex mx-auto d-flex align-items-center my-auto w-100 justify-content-between">
           <div className="iconDS position-relative">
-            <Image src={icons} layout="fill" alt="" srcset="" quality={100} />
+            <Image src={icons} layout="fill" alt="" srcSet="" quality={100} />
           </div>
           <div className="list-menu">
             <ul className="d-flex flex-row justify-content-center align-items-center h-100 my-auto">

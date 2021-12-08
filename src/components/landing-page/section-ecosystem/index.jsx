@@ -1,10 +1,14 @@
 import React from 'react';
+
+// libs
 import Image from "next/image";
 import Fade from 'react-reveal/Fade';
+
+// assets
 import bell from "src/assets/images/illustration/bell.png";
 import connect from "src/assets/images/illustration/connect.png";
+
 export default function Index() {
-  
   return (
     <div className="ds-section">
 

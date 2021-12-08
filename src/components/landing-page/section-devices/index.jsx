@@ -1,7 +1,10 @@
 import React from 'react';
+
+// libs
 import Image from "next/image";
 import Fade from 'react-reveal/Fade';
 
+// assets
 import { DataDevices } from "src/helpers/dummy-data/datadevices";
 
 export default function Index() {
@@ -22,8 +25,8 @@ export default function Index() {
         <div className="row justify-content-center">
           <div className="col-md-10">
             <div className="row justify-content-center text-center ds-section__devices-item-wrapper">
-              {DataDevices.map((value) => (
-                <div className="col-md-3 col-6">
+              {DataDevices.map((value, index) => (
+                <div className="col-md-3 col-6" key={index}>
                   <div className="ds-section__devices-item">
                     <div className="ds-section__devices-item-images">
                       <Fade duration={3500}>

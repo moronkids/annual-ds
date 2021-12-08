@@ -1,6 +1,10 @@
 import React from 'react';
+
+// libs
 import Image from "next/image";
 import Fade from 'react-reveal/Fade';
+
+// assets
 import PublicData from "src/assets/images/illustration/public-data.png";
 import PlayersData from "src/assets/images/illustration/players-data.png";
 import Tournament from "src/assets/images/illustration/tournament.png";

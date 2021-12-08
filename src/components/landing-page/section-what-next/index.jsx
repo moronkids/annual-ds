@@ -1,6 +1,10 @@
-import Image from "next/image";
 import React from 'react';
+
+// libs
+import Image from "next/image";
 import Fade from 'react-reveal/Fade';
+
+// assets
 import arif from "src/assets/images/photo/arif.png";
 
 export default function Index() {  

@@ -50,4 +50,10 @@
     background: url('../../../assets/images/icons/arrow-right.png') 0 0/cover no-repeat;
     margin-left: 15px;
   }
+
+  &.no-arrow {
+    &::after {
+      display: none;
+    }
+  }
 }

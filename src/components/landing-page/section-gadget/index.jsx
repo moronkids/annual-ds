@@ -1,6 +1,10 @@
 import React from 'react';
+
+// libs
 import Image from "next/image";
 import Fade from 'react-reveal/Fade';
+
+// assets
 import wiku from "src/assets/images/photo/wiku.png";
 
 export default function Index() {

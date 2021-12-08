@@ -1,10 +1,13 @@
 import React from 'react';
+
+// libs
 import Image from "next/image";
 import Fade from 'react-reveal/Fade';
+
+// assets
 import journey from "src/assets/images/illustration/journey.png";
 
 export default function Index() {
-  
   return (
     <div className="ds-section__journey">
       <div className="container">
