@@ -17,6 +17,7 @@ import Router from "next/router";
 import "styles/nprogress.css";
 // import "src/assets/scss/base/bootstrap/bootstrap.scss";
 import "src/assets/scss/main-style.scss";
+import { AppWrapper } from "providers";
 
 NProgress.configure({
   minimum: 0.3,
@@ -34,13 +35,13 @@ Router.events.on("routeChangeError", () => NProgress.done());
 const MyApp = ({ Component, pageProps }) => {
   return (
     <>
-      {/* <AppWrapper> */}
-      <HeadersWeb />
-      <Body>
-        <Component {...pageProps} />
-      </Body>
-      <Footers />
-      {/* </AppWrapper> */}
+      <AppWrapper>
+        <HeadersWeb />
+        <Body>
+          <Component {...pageProps} />
+        </Body>
+        <Footers />
+      </AppWrapper>
     </>
   );
 };

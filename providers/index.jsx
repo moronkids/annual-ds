@@ -11,6 +11,7 @@ export const AppWrapper = ({ children }) => {
   const [searchBar, setSearchBar] = useState(false);
   const [inputmode, setInputMode] = useState(false);
   const [activePages, setActivePages] = useState(null);
+  const [sidebar, setSideBar] = useState(false);
   const [query, setQuery] = useState(null);
   React.useEffect(() => {}, []);
 
@@ -26,6 +27,8 @@ export const AppWrapper = ({ children }) => {
     setInputMode,
     query,
     setQuery,
+    sidebar,
+    setSideBar,
   };
 
   // Interface donde será expuesto como proveedor y envolverá la App.
