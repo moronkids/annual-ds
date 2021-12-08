@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Fade from "react-reveal/Fade";
+import Pattern from "styles/assets/Pattern.png";
 function Index() {
   return (
     <div>
@@ -11,6 +12,7 @@ function Index() {
               <div className="col-md-auto col-12 ds-our-act-desc p-md-0 py-4">
                 We are here to democratize access, knowledge for technology and
                 innovation through startup entrepreneurship
+                <Image src={Pattern} className="d-sm-block d-none"></Image>
               </div>
             </Fade>
             <Fade right>

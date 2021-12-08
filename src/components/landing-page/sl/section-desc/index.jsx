@@ -80,8 +80,10 @@ function Index(props) {
           <div className="d-flex  justify-content-center mx-auto w-100">
             <h2 className="act">Our Activities</h2>
           </div>
-          <Carousel slidesToScroll={1} />
-          <Carousel slidesToScroll={-1} />
+          <div className="ds-crsl-1">
+            <Carousel slidesToScroll={1} />
+            <Carousel slidesToScroll={-1} />
+          </div>
         </>
       )}
       {props.slide === false && (
