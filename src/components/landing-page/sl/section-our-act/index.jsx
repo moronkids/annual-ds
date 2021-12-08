@@ -11,8 +11,10 @@ function Index() {
             <Fade left>
               <div className="col-md-auto col-12 ds-our-act-desc p-md-0 py-4">
                 We are here to democratize access, knowledge for technology and
-                innovation through startup entrepreneurship
-                <Image src={Pattern} className="d-sm-block d-none"></Image>
+                innovation through startup entrepreneurship{" "}
+                <div className="d-sm-block d-none">
+                  <Image src={Pattern} className=""></Image>
+                </div>
               </div>
             </Fade>
             <Fade right>
