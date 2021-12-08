@@ -1,7 +1,6 @@
 import Image from "next/image";
 import React from 'react';
 import Fade from 'react-reveal/Fade';
-import { BrowserView, MobileView } from 'react-device-detect';
 import Slider from "react-slick";
 // Import css files
 import "slick-carousel/slick/slick.css";
