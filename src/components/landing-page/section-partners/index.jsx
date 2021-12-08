@@ -1,163 +1,163 @@
-import React from 'react';
 import Image from "next/image";
-import arif from "../../../assets/images/photo/arif.png";
-import bell from "../../../assets/images/illustration/bell.png";
-import connect from "../../../assets/images/illustration/connect.png";
-import { 
-  img1, img2, img3, img4, img5, img6, img7, img8,
-  img9, img10, img11, img12, img13, img14, img15, img16, 
-  img17, img18, img19, img20, img21, img22, img23, img24, 
-  img25, img26, img27, img28, img29, img30, img31, img32, img33, 
-} from "../../../assets/images/logo";
+import React from 'react';
+import Fade from 'react-reveal/Fade';
+import { BrowserView, MobileView } from 'react-device-detect';
+import Slider from "react-slick";
+// Import css files
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import {
+  img1, img10, img11, img12, img13, img14, img15, img16,
+  img17, img18, img19, img2, img20, img21, img22, img23, img24,
+  img25, img26, img27, img28, img29, img3, img30, img31, img32, img33, img4, img5, img6, img7, img8,
+  img9
+} from "src/assets/images/logo";
 
-import journey from "../../../assets/images/illustration/journey.png";
 
 export default function Index() {
   
+  var settings = {
+    mobileFirst: true,
+    responsive: [
+      {
+        breakpoint: 10000, // a unrealistically big number to cover up greatest screen resolution
+        settings: 'unslick'
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          speed: 500,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      }
+    ]
+  };
+
   return (
     <div className="ds-section-partners">
       <div className="ds-section-partners__clients">
         <div className="container">
           <div className="row justify-content-center text-center">
             <div className="ds-container">
-              <p className="ds-section-partners__clients-title">Partners and supporters </p>
+
+              <Fade bottom duration={1000}>
+                <p className="ds-section-partners__clients-title">Partners and supporters </p>
+              </Fade>
 
               <div className="ds-section-partners__clients-list">
-                <ul>
-                  <li><Image src={img1}></Image></li>
-                  <li><Image src={img2}></Image></li>
-                  <li><Image src={img3}></Image></li>
-                  <li><Image src={img4}></Image></li>
-                  <li><Image src={img5}></Image></li>
-                  <li><Image src={img6}></Image></li>
-                  <li><Image src={img7}></Image></li>
-                  <li><Image src={img8}></Image></li>
-                </ul>
-                <ul>
-                  <li><Image src={img9}></Image></li>
-                  <li><Image src={img10}></Image></li>
-                  <li><Image src={img11}></Image></li>
-                  <li><Image src={img12}></Image></li>
-                  <li><Image src={img13}></Image></li>
-                  <li><Image src={img14}></Image></li>
-                  <li><Image src={img15}></Image></li>
-                  <li><Image src={img16}></Image></li>
-                </ul>
-                <ul>
-                  <li><Image src={img17}></Image></li>
-                  <li><Image src={img18}></Image></li>
-                  <li><Image src={img19}></Image></li>
-                  <li><Image src={img20}></Image></li>
-                  <li><Image src={img21}></Image></li>
-                  <li><Image src={img22}></Image></li>
-                  <li><Image src={img23}></Image></li>
-                  <li><Image src={img24}></Image></li>
-                  <li><Image src={img25}></Image></li>
-                </ul>
-                <ul>
-                  <li><Image src={img26}></Image></li>
-                  <li><Image src={img27}></Image></li>
-                  <li><Image src={img28}></Image></li>
-                  <li><Image src={img29}></Image></li>
-                  <li><Image src={img30}></Image></li>
-                  <li><Image src={img31}></Image></li>
-                  <li><Image src={img32}></Image></li>
-                  <li><Image src={img33}></Image></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-      <div className="ds-section-partners__what-next">
-        <div className="container">
-          <div className="row justify-content-center ds-section__content-bod">
-            <div className="col-md">
-              <p className="ds-section-partners__what-next-title">What’s next?</p>
-              <div className="ds-section__content-bod-detail">
-                <p className="ds-section__content-bod-detail-desc">
-                  This year, through DS/Innovate, we helped companies and enterprises connect to Indonesia's startup ecosystem through advisory, research, hackathon, incubator and accelerator programs. We also enable organizations to innovate from within by embedding an innovative mindset through education and training. Soon we plan to help Indonesia's startup ecosystem to interact directly with one another through a platform that we will launch soon, where our motto here is discover great companies and explore opportunities all in one place.
-                </p>
-
-              </div>
-            </div>
-            <div className="col-md-auto">
-              <div className="ds-section__content-bod-detail-photo">
-                <Image src={arif}></Image>
-
-                <p className="ds-section__content-bod-detail-name text-center">Arif Hardiyanto</p>
-                <p className="ds-section__content-bod-detail-position text-center">GM of Operation DailySocial.id</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-      <div className="ds-section-partners__journey">
-        <div className="container">
-          <div className="row justify-content-center ds-section-partners__journey-inner">
-            <div className="col-md-auto">
-              <Image src={journey}></Image>
-            </div>
-            <div className="col-md">
-              <p className="ds-section-partners__journey-title">Eager to be part of our journey?</p>
-              <p className="ds-section-partners__journey-desc">Let’s get in touch and discuss further about the future of<br /> 
-              Indonesian startup ecosystem!</p>
-              <a href="https://dailysocial.id/" target="_blank" className="ds-button"><span>Let’s subscribe</span></a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-      <div className="ds-section-partners__ecosystem">
-        <div className="container">
-          <div className="row text-center">
-            <div className="col-md">
-              <p className="ds-section-partners__ecosystem-main-title">Want to get involved in Indonesia Startup Ecosystem?</p>
-            </div>
-          </div>
-          <div className="row justify-content-center">
-            <div className="col-md-12">
-              <div className="row">
-                <div className="col-md-6">
-                  <div className="ds-section-partners__ecosystem-items">
-                    <div className="row">
-                      <div className="col-md">
-                        <p className="ds-section-partners__ecosystem-items-text">Get unlimited access to discover the best minds of innovation in Indonesia!</p>
-
-                        <a href="https://dailysocial.id/" target="_blank" className="ds-button"><span>Get connected</span></a>
-                      </div>
-                      <div className="col-md-auto">
-                        <Image src={bell}></Image>
-                      </div>
+                <Slider {...settings}>
+                  <Fade bottom duration={1000}>
+                    <ul>
+                      <li><Image src={img1}></Image></li>
+                      <li><Image src={img2}></Image></li>
+                      <li><Image src={img3}></Image></li>
+                      <li><Image src={img4}></Image></li>
+                      <li><Image src={img5}></Image></li>
+                      <li><Image src={img6}></Image></li>
+                      <li><Image src={img7}></Image></li>
+                      <li><Image src={img8}></Image></li>
+                    </ul>
+                  </Fade>
+                  <Fade bottom duration={1500}>
+                    <ul>
+                      <li><Image src={img9}></Image></li>
+                      <li><Image src={img10}></Image></li>
+                      <li><Image src={img11}></Image></li>
+                      <li><Image src={img12}></Image></li>
+                      <li><Image src={img13}></Image></li>
+                      <li><Image src={img14}></Image></li>
+                      <li><Image src={img15}></Image></li>
+                      <li><Image src={img16}></Image></li>
+                    </ul>
+                  </Fade>
+                  <Fade bottom duration={2000}>
+                    <ul>
+                      <li><Image src={img17}></Image></li>
+                      <li><Image src={img18}></Image></li>
+                      <li><Image src={img19}></Image></li>
+                      <li><Image src={img20}></Image></li>
+                      <li><Image src={img21}></Image></li>
+                      <li><Image src={img22}></Image></li>
+                      <li><Image src={img23}></Image></li>
+                      <li><Image src={img24}></Image></li>
+                      <li><Image src={img25}></Image></li>
+                    </ul>
+                  </Fade>
+                  <Fade bottom duration={2500}>
+                    <ul>
+                      <li><Image src={img26}></Image></li>
+                      <li><Image src={img27}></Image></li>
+                      <li><Image src={img28}></Image></li>
+                      <li><Image src={img29}></Image></li>
+                      <li><Image src={img30}></Image></li>
+                      <li><Image src={img31}></Image></li>
+                      <li><Image src={img32}></Image></li>
+                      <li><Image src={img33}></Image></li>
+                    </ul>
+                  </Fade>
+                </Slider>
+                
+                {/* <MobileView>
+                  <Slider {...settings}>
+                    <div>
+                      <ul>
+                        <li><Image src={img1}></Image></li>
+                        <li><Image src={img2}></Image></li>
+                        <li><Image src={img3}></Image></li>
+                        <li><Image src={img4}></Image></li>
+                        <li><Image src={img5}></Image></li>
+                        <li><Image src={img6}></Image></li>
+                        <li><Image src={img7}></Image></li>
+                        <li><Image src={img8}></Image></li>
+                      </ul>
                     </div>
-                  </div>
-                </div>
-
-                <div className="col-md-6">
-                  <div className="ds-section-partners__ecosystem-items">
-                    <div className="row">
-                      <div className="col-md">
-                        <p className="ds-section-partners__ecosystem-items-text">Get more experience, connections and many more for the growth of your startup</p>
-
-                        <a href="https://dailysocial.id/" target="_blank" className="ds-button"><span>Let me in</span></a>
-                      </div>
-                      <div className="col-md-auto">
-                        <Image src={connect}></Image>
-                      </div>
+                    <div>
+                      <ul>
+                        <li><Image src={img9}></Image></li>
+                        <li><Image src={img10}></Image></li>
+                        <li><Image src={img11}></Image></li>
+                        <li><Image src={img12}></Image></li>
+                        <li><Image src={img13}></Image></li>
+                        <li><Image src={img14}></Image></li>
+                        <li><Image src={img15}></Image></li>
+                        <li><Image src={img16}></Image></li>
+                      </ul>
                     </div>
-                  </div>
-                </div>
+                    <div>
+                      <ul>
+                        <li><Image src={img17}></Image></li>
+                        <li><Image src={img18}></Image></li>
+                        <li><Image src={img19}></Image></li>
+                        <li><Image src={img20}></Image></li>
+                        <li><Image src={img21}></Image></li>
+                        <li><Image src={img22}></Image></li>
+                        <li><Image src={img23}></Image></li>
+                        <li><Image src={img24}></Image></li>
+                        <li><Image src={img25}></Image></li>
+                      </ul>
+                    </div>
+                    <div>
+                      <ul>
+                        <li><Image src={img26}></Image></li>
+                        <li><Image src={img27}></Image></li>
+                        <li><Image src={img28}></Image></li>
+                        <li><Image src={img29}></Image></li>
+                        <li><Image src={img30}></Image></li>
+                        <li><Image src={img31}></Image></li>
+                        <li><Image src={img32}></Image></li>
+                        <li><Image src={img33}></Image></li>
+                      </ul>
+                    </div>
+                  </Slider>
+                </MobileView> */}
               </div>
             </div>
           </div>
         </div>
       </div>
-
     </div>
   )
 }

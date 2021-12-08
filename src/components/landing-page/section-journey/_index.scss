@@ -1,0 +1,50 @@
+.ds-section {
+  &__journey {
+    position: relative;
+    padding-bottom: 100px;
+    border-radius: 20px;
+    @include md() {
+      padding-bottom: 60px;
+    }
+
+    &-inner {
+      max-width: 790px;
+      gap: 60px;
+      margin: 0 auto;
+      @include md() {
+        gap: 24px;
+      }
+    }
+
+    &-img {
+      @include md() {
+        text-align: center;
+        div {
+          width: 180px;
+        }
+      }
+    }
+
+    &-title {
+      @include font-face($font-opensans, 2.8rem, 700);
+      color: $primary-black;
+      line-height: 42px;
+      margin-bottom: 12px;
+      @include md() {
+        font-size: 2.4rem;
+        line-height: 36px;
+      }
+    }
+
+    &-desc {
+      @include font-face($font-opensans, 1.8rem);
+      color: $text-secondary;
+      line-height: 30px;
+      margin-bottom: 28px;     
+      @include md() {
+        font-size: 1.6rem;
+        line-height: 28px;
+      }   
+    }
+  }
+}

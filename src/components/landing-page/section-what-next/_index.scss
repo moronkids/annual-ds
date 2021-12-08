@@ -1,0 +1,15 @@
+.ds-section {
+  &__what-next {
+    &-title {
+      @include font-face($font-opensans, 3.6rem, 700);
+      color: $primary-black;
+      line-height: 50px;
+      margin-bottom: 40px;
+      @include md() {
+        font-size: 2.4rem;
+        line-height: 32px;
+        text-align: center;
+      }
+    }
+  }
+}

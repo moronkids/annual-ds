@@ -5,10 +5,12 @@
     height: 84px;
     width: 100%;
     box-shadow: 0px 0px 4px #e5e5e5;
+    z-index: 200;
     background: #fafafa;
     @include sm {
         height: 64px;
     }
+
     -webkit-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2);
     box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2);

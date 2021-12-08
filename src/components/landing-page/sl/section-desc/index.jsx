@@ -5,6 +5,7 @@ import Carousel from "src/components/landing-page/sl/section-desc/carousel";
 import DS_funding from "src/components/landing-page/sl/section-funding";
 import personCEO from "styles/assets/PersonCEO.png";
 import personAmir from "styles/assets/masAmir.png";
+import Fade from "react-reveal/Fade";
 //tes
 function Index(props) {
   let data;
@@ -38,22 +39,24 @@ function Index(props) {
         }`}
       >
         <div className="col-md-auto col-12 text-md-left text-center">
-          <Image src={decidePhoto(props.photo)} quality={100} />
-          <div
-            id="name-person"
-            className="p-0 m-0"
-            dangerouslySetInnerHTML={{ __html: props.person }}
-          ></div>
-          <div
-            id="title-person"
-            className="p-0 m-0"
-            dangerouslySetInnerHTML={{ __html: props.title }}
-          >
-            {/* {props.title} */}
-          </div>
+          <Fade bottom>
+            <Image src={decidePhoto(props.photo)} quality={100} />
+            <div
+              id="name-person"
+              className="p-0 m-0"
+              dangerouslySetInnerHTML={{ __html: props.person }}
+            ></div>
+            <div
+              id="title-person"
+              className="p-0 m-0"
+              dangerouslySetInnerHTML={{ __html: props.title }}
+            ></div>
+          </Fade>
         </div>
         <div className="col-md col-12 text-desc">
-          <p>{props.data}</p>
+          <Fade top>
+            <p>{props.data}</p>
+          </Fade>
           {props.afterDataHTML === true ? (
             <div
               className="highlights"

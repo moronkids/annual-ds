@@ -1,7 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
-import Link from "next/link";
 //dummy data
 import datadesc from "src/helpers/dummy-data/datadesc.json";
 import datafund from "src/helpers/dummy-data/datafund.json";
@@ -10,7 +7,15 @@ import SectionIntro from "src/components/landing-page/sl/section-intro";
 import SectionDesc from "src/components/landing-page/sl/section-desc";
 import SectionAct from "src/components/landing-page/sl/section-our-act";
 import SectionStartUp from "src/components/landing-page/sl/section-startup-type";
-import { SectionGadget, SectionPartners, SectionReaders } from "src/components/landing-page";
+import { 
+  SectionGadget, 
+  SectionPartners,
+  SectionReaders,
+  SectionJourney,
+  SectionEcosystem, 
+  SectionWhatNext,
+  SectionDevices
+} from "src/components/landing-page";
 
 export default function Home() {
   return (
@@ -41,15 +46,22 @@ export default function Home() {
         afterDataHTML={datafund.afterDataHTML}
         photo={datafund.photo}
       />
-      <SectionStartUp reverse={false} />
-      <SectionStartUp reverse={true} />
-      <SectionDesc />
+      <SectionStartUp reverse={false} startuptype={"unicorn"} />
+      <SectionStartUp reverse={true} startuptype={"centaur"} />
 
       <SectionGadget />
+
+      <SectionDevices />
 
       <SectionReaders />
 
       <SectionPartners />
+
+      <SectionWhatNext />
+
+      <SectionJourney />
+
+      <SectionEcosystem />
     </div>
   );
 }
