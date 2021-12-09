@@ -11,7 +11,7 @@ function index() {
         <div className="ds-container d-flex mx-auto d-flex align-items-center my-auto w-100 justify-content-between">
           <div className="iconDS position-relative">
             <div>
-              <Image src={icons} layout="fill" alt="" srcset="" quality={100} />
+              <Image src={icons} layout="fill" quality={100} />
             </div>
           </div>
           <div

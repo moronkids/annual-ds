@@ -14,14 +14,15 @@ export default class AutoPlayMethods extends Component {
   render() {
     const settings = {
       slidesToShow: 7,
-      slidesToScroll: this.props.slidesToScroll,
+      slidesToScroll: this.props.slidesToScroll || 1,
       autoplay: true,
       autoplaySpeed: 0,
-      speed: 3000,
+      speed: 5000,
       infinite: true,
       pauseOnHover: true,
       cssEase: "linear",
       easing: "linear",
+      pauseOnHover: false,
       responsive: [
         {
           breakpoint: 1024,
@@ -52,7 +53,7 @@ export default class AutoPlayMethods extends Component {
     return (
       <Fragment>
         <Slider {...settings}>
-          {[...Array(10)].map((val, i) => {
+          {this.props.DataCarousel?.map((val, i) => {
             return (
               <Fragment key={i}>
                 <div
@@ -69,7 +70,7 @@ export default class AutoPlayMethods extends Component {
                   className="slide sd"
                 >
                   <Image
-                    src={DummyImg}
+                    src={val.images}
                     layout="responsive"
                     objectFit="contains"
                     quality={100}

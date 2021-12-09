@@ -9,7 +9,8 @@ import Carousel from "src/components/landing-page/sl/section-desc/carousel";
 import DS_funding from "src/components/landing-page/sl/section-funding";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import { DataCarouselActTop } from "src/helpers/dummy-data/dataouract-top";
+import { DataCarouselActBottom } from "src/helpers/dummy-data/dataouract-below";
 // assets
 import personAmir from "styles/assets/masAmir.png";
 import personCEO from "styles/assets/PersonCEO.png";
@@ -77,8 +78,11 @@ function Index(props) {
             <h2 className="act">Our Activities</h2>
           </div>
           <div className="ds-crsl-1">
-            <Carousel slidesToScroll={1} />
-            <Carousel slidesToScroll={-1} />
+            <Carousel slidesToScroll={1} DataCarousel={DataCarouselActTop} />
+            <Carousel
+              slidesToScroll={-1}
+              DataCarousel={DataCarouselActBottom}
+            />
           </div>
         </Fragment>
       )}

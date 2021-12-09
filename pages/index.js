@@ -1,18 +1,18 @@
 import Head from "next/head";
 
 //components
-import { 
+import {
   SectionIntro,
   SectionDesc,
   SectionAct,
   SectionStartUp,
-  SectionGadget, 
+  SectionGadget,
   SectionPartners,
   SectionReaders,
   SectionJourney,
-  SectionEcosystem, 
+  SectionEcosystem,
   SectionWhatNext,
-  SectionDevices
+  SectionDevices,
 } from "src/components/landing-page";
 
 //dummy data
@@ -53,7 +53,7 @@ export default function Home() {
       />
 
       <SectionStartUp reverse={false} startuptype={"unicorn"} />
-      
+
       <SectionStartUp reverse={true} startuptype={"centaur"} />
 
       <SectionGadget />
