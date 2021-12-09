@@ -13,6 +13,7 @@ import {
   SectionEcosystem,
   SectionWhatNext,
   SectionDevices,
+  SectionReportLaunched,
 } from "src/components/landing-page";
 
 //dummy data
@@ -55,7 +56,7 @@ export default function Home() {
       <SectionStartUp reverse={false} startuptype={"unicorn"} />
 
       <SectionStartUp reverse={true} startuptype={"centaur"} />
-
+      <SectionReportLaunched />
       <SectionGadget />
 
       <SectionDevices />
