@@ -1,12 +1,18 @@
 .ds-section {
   &-partners {
-    padding: 80px 0 100px;
+    padding-top: 80px;
+    @include md() {
+      padding-top: 60px;
+    }
     &__clients {
       margin-bottom: 100px;
       &-title {
         @include font-face($font-opensans, 3.6rem, 700);
         color: $primary-black;
         margin-bottom: 40px;
+        @include md() {
+          font-size: 2.4rem;
+        }
       }
 
       &-list {
@@ -14,12 +20,19 @@
         background: $white;
         box-shadow: 0px 0px 20px #EAEAEA;
         border-radius: 20px;
+        @include md() {
+          padding: 36px 22px;
+        }
         ul {
-          display: flex;
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
           list-style: none;
           padding: 0;
           margin: 0;
           margin-bottom: 24px;
+          @include md() {
+            gap: 28px 4px;
+          }
           &:last-child {
             margin-bottom: 0;
           }
@@ -30,21 +43,32 @@
       }
     }
 
-    &__what-next {
-      &-title {
-        @include font-face($font-opensans, 3.6rem, 700);
-        color: $primary-black;
-        line-height: 50px;
-        margin-bottom: 40px;
+    .slick-dots {
+      @include md() {
+        bottom: -70px;
       }
-    }
-
-    &__journey {
-      position: relative;
-      padding: 40px 95px;
-      background: $green2;
-      border: 1px solid #E5EFEF;
-      border-radius: 20px;
+      li {
+        width: auto;
+        height: auto;
+        button {
+          width: 10px;
+          height: 10px;
+          margin: 0 auto;
+          border-radius: 8px;
+          padding: 0;
+          transition: .3s all ease;
+          background: #BFD7D7;
+          &::before {
+            display: none;
+          }
+        }
+        &.slick-active {
+          button {
+            width: 28px;
+            background: $green;
+          }
+        }
+      }
     }
   }
 
@@ -52,7 +76,13 @@
     &-bod {
       max-width: 920px;
       gap: 65px;
-      margin: 0 auto;
+      margin: 0 auto 80px;
+      padding-bottom: 94px;
+      border-bottom: 1px solid #CECECE;
+      @include md() {
+        margin: 0 auto 60px;
+        padding-bottom: 60px;
+      }
       &-detail {
         &-desc {
           @include font-face($font-opensans, 1.8rem);

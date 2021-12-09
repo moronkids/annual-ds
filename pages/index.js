@@ -1,16 +1,23 @@
 import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
-import Link from "next/link";
+
+//components
+import { 
+  SectionIntro,
+  SectionDesc,
+  SectionAct,
+  SectionStartUp,
+  SectionGadget, 
+  SectionPartners,
+  SectionReaders,
+  SectionJourney,
+  SectionEcosystem, 
+  SectionWhatNext,
+  SectionDevices
+} from "src/components/landing-page";
+
 //dummy data
 import datadesc from "src/helpers/dummy-data/datadesc.json";
 import datafund from "src/helpers/dummy-data/datafund.json";
-//components
-import SectionIntro from "src/components/landing-page/sl/section-intro";
-import SectionDesc from "src/components/landing-page/sl/section-desc";
-import SectionAct from "src/components/landing-page/sl/section-our-act";
-import SectionStartUp from "src/components/landing-page/sl/section-startup-type";
-import { SectionGadget, SectionPartners } from "src/components/landing-page";
 
 export default function Home() {
   return (
@@ -23,6 +30,7 @@ export default function Home() {
       <div className="ds-container d-flex flex-column mx-auto">
         <SectionIntro />
       </div>
+
       <SectionDesc
         slide={true}
         data={datadesc.data}
@@ -32,7 +40,9 @@ export default function Home() {
         afterDataHTML={datadesc.afterDataHTML}
         photo={datadesc.photo}
       />
+
       <SectionAct />
+
       <SectionDesc
         slide={datafund.slide}
         reverse={datafund.reverse}
@@ -41,10 +51,24 @@ export default function Home() {
         afterDataHTML={datafund.afterDataHTML}
         photo={datafund.photo}
       />
+
       <SectionStartUp reverse={false} startuptype={"unicorn"} />
+      
       <SectionStartUp reverse={true} startuptype={"centaur"} />
+
       <SectionGadget />
+
+      <SectionDevices />
+
+      <SectionReaders />
+
       <SectionPartners />
+
+      <SectionWhatNext />
+
+      <SectionJourney />
+
+      <SectionEcosystem />
     </div>
   );
 }

@@ -1,5 +1,6 @@
 .ds-startup-type {
     padding: 60px 0;
+    overflow: hidden;
     @include sm {
         padding: 60px 0px 0px 0px;
     }

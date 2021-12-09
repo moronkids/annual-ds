@@ -1,9 +1,15 @@
 import React from "react";
-// import BlankImg from "styles/assets/blank-img-intro.svg";
-import HeroIntro from "styles/assets/Hero-intro.png";
+
+// libs
 import Image from "next/image";
-import Btn from "src/components/landing-page/sl/section-intro/button";
 import Fade from "react-reveal/Fade";
+
+// components
+import Btn from "src/components/landing-page/sl/section-intro/button";
+
+// assets
+import HeroIntro from "styles/assets/Hero-intro.png";
+
 function index() {
   return (
     <div className="ds-section-intro col-12 d-flex flex-md-row flex-column my-auto">

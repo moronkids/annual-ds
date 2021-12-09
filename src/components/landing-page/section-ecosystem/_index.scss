@@ -1,0 +1,46 @@
+.ds-section {
+  &__ecosystem {
+    background: $green2;
+    padding: 60px 0;
+    overflow: hidden;
+    &-main-title {
+      @include font-face($font-opensans, 2.8rem, 700);
+      color: $primary-black;
+      line-height: 42px;
+      margin-bottom: 40px;
+    }
+
+    &-items {
+      background: #FCFCFC;
+      padding: 40px;
+      border-radius: 20px;
+      @include md() {
+        padding: 50px 24px;
+        margin-bottom: 40px;
+      }
+      &-img {
+        order: 1;
+        @include md() {
+          order: 0;
+          margin-bottom: 10px;
+        }
+      }
+      &-text {
+        @include font-face($font-opensans, 1.6rem);
+        color: $text-secondary;
+        line-height: 30px;
+        margin-bottom: 28px;
+      }
+    }
+
+    .row {
+      .col-md-6 {
+        &:last-child {
+          .ds-section__ecosystem-items {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}

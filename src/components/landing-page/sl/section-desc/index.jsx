@@ -1,16 +1,23 @@
-import React, { useEffect } from "react";
-import Person from "styles/assets/photo-desc-person.svg";
+import React, { Fragment, useEffect } from "react";
+
+// libs
 import Image from "next/image";
+import Fade from "react-reveal/Fade";
+
+// components
 import Carousel from "src/components/landing-page/sl/section-desc/carousel";
 import DS_funding from "src/components/landing-page/sl/section-funding";
-import personCEO from "styles/assets/PersonCEO.png";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+// assets
 import personAmir from "styles/assets/masAmir.png";
-import Fade from "react-reveal/Fade";
+import personCEO from "styles/assets/PersonCEO.png";
+
 //tes
 function Index(props) {
-  let data;
   const decidePhoto = (val) => {
-    console.log(val, props.photo, "cek");
+    // console.log(val, props.photo, "cek");
     if (val === "amir") {
       return personAmir;
     } else {
@@ -20,17 +27,6 @@ function Index(props) {
   useEffect(() => {}, []);
   return (
     <div className="ds-section-desc">
-      <link
-        rel="stylesheet"
-        type="text/css"
-        charset="UTF-8"
-        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
-      />
-      <link
-        rel="stylesheet"
-        type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
-      />
       <div
         className={`ds-container ds-section-desc-content col-12 d-flex flex-md${
           props.reverse ? "-row-reverse " : "-row "
@@ -76,7 +72,7 @@ function Index(props) {
         }}
       />
       {props.slide && (
-        <>
+        <Fragment>
           <div className="d-flex  justify-content-center mx-auto w-100">
             <h2 className="act">Our Activities</h2>
           </div>
@@ -84,12 +80,12 @@ function Index(props) {
             <Carousel slidesToScroll={1} />
             <Carousel slidesToScroll={-1} />
           </div>
-        </>
+        </Fragment>
       )}
       {props.slide === false && (
-        <>
+        <Fragment>
           <DS_funding />
-        </>
+        </Fragment>
       )}
     </div>
   );

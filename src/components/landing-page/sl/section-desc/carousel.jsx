@@ -1,7 +1,12 @@
-import React, { Component } from "react";
-import Slider from "react-slick";
-import DummyImg from "styles/assets/carousel/example.png";
+import React, { Component, Fragment } from "react";
+
+// libs
 import Image from "next/image";
+import Slider from "react-slick";
+
+// assets
+import DummyImg from "styles/assets/carousel/example.png";
+
 export default class AutoPlayMethods extends Component {
   constructor(props) {
     super(props);
@@ -45,13 +50,12 @@ export default class AutoPlayMethods extends Component {
       ],
     };
     return (
-      <>
+      <Fragment>
         <Slider {...settings}>
           {[...Array(10)].map((val, i) => {
             return (
-              <>
+              <Fragment key={i}>
                 <div
-                  class="slide"
                   style={{
                     width: "100%",
                     minWidth: "255px",
@@ -62,7 +66,7 @@ export default class AutoPlayMethods extends Component {
                     borderRadius: "10px",
                     overflow: "hidden",
                   }}
-                  className="sd"
+                  className="slide sd"
                 >
                   <Image
                     src={DummyImg}
@@ -74,11 +78,11 @@ export default class AutoPlayMethods extends Component {
                     }}
                   />
                 </div>
-              </>
+              </Fragment>
             );
           })}
         </Slider>
-      </>
+      </Fragment>
     );
   }
 }

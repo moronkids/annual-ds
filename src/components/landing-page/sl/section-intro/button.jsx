@@ -3,7 +3,7 @@ import React from "react";
 function Button() {
   return (
     <>
-      <div className="ds-section-intro-btn">Know our journey</div>
+      <a href="https://dailysocial.id/" target="_blank" className="ds-button no-arrow"><span>Know our journey</span></a>
     </>
   );
 }

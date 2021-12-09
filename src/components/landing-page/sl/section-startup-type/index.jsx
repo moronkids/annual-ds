@@ -1,9 +1,13 @@
 import React from "react";
+
+// libs
 import Image from "next/image";
-import BlankImg from "styles/assets/blank-img-intro.svg";
+import Slide from "react-reveal/Slide";
+
+// assets
 import Centaur from "styles/assets/Centaur.png";
 import Unicorn from "styles/assets/Unicorn.png";
-import Slide from "react-reveal/Slide";
+
 function Index(props) {
   const decidePhoto = (val) => {
     if (val === "unicorn") {
