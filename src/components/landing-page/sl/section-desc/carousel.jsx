@@ -71,8 +71,8 @@ export default class AutoPlayMethods extends Component {
                 >
                   <Image
                     src={val.images}
-                    layout="responsive"
-                    objectFit="contains"
+                    layout="intrinsic"
+                    objectFit="cover"
                     quality={100}
                     style={{
                       borderRadius: "10px",

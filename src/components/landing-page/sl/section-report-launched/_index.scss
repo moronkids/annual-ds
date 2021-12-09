@@ -23,6 +23,17 @@
         color: #040404;
         z-index: 100;
         text-align: left;
+        @include sm {
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 33px;
+
+            /* Black 100% */
+
+            color: #040404;
+        }
     }
     .text-desc {
         font-family: Open Sans;
@@ -33,5 +44,17 @@
         color: #3a3a3a;
         z-index: 100;
         text-align: left;
+        @include sm {
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 28px;
+            /* or 175% */
+
+            /* Text - Primary */
+
+            color: #3a3a3a;
+        }
     }
 }

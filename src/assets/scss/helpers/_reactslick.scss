@@ -10,6 +10,11 @@
             margin-top: 15px;
         }
     }
+    .slide {
+        div {
+            min-height: 160px !important;
+        }
+    }
     .slick-arrow,
     .slick-next,
     .slick-prev {
@@ -46,6 +51,16 @@
     .slick-slide {
         margin-bottom: 0;
         object-fit: cover;
+    }
+    .slick-slide,
+    .slick-active,
+    .slick-current {
+        @include sm {
+            max-width: 343px !important;
+            margin: 0 auto !important;
+            object-fit: cover;
+            height: inherit !important;
+        }
     }
     .slider_ {
         div {
