@@ -48,7 +48,7 @@ function Index() {
             </div>
           </Fade>
         </div>
-        <div className="ds-funding-startup ds-container w-100 d-sm-block d-none">
+        <div className="ds-funding-startup ds-container w-100 d-md-block d-none">
           <div className="wrapping-box">
             <div className="grid">
               {startup.map((val, i) => {
@@ -84,7 +84,7 @@ function Index() {
           </div>
         </div>
         {/* <div className="testing d-sm-none d-block"> */}
-        <div className="w-100 h-100 ds-crsl-2 d-sm-none d-block">
+        <div className="w-100 h-100 ds-crsl-2 d-md-none d-block">
           <Carousel />
         </div>
         {/* </div> */}

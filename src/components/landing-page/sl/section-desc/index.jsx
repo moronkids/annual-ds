@@ -35,10 +35,17 @@ function Index(props) {
           !props.reverse ? "-reverse " : " "
         }`}
       >
-        <div className="col-md-auto col-12 text-md-left text-center">
+        <div className="col-md-auto col-12 text-md-left text-center d-flex flex-column mx-auto">
           <Fade bottom>
-            <div style={{ width: "224px", height: "234px" }}>
-              <Image src={decidePhoto(props.photo)} quality={100} />
+            <div
+              style={{ width: "224px", height: "234px" }}
+              className="mx-auto"
+            >
+              <Image
+                src={decidePhoto(props.photo)}
+                quality={100}
+                className="text-center"
+              />
             </div>
             <div
               id="name-person"
@@ -54,17 +61,17 @@ function Index(props) {
         </div>
         <div className="col-md col-12 text-desc">
           <Fade top>
-            <p>{props.data}</p>
+            <p className="container">{props.data}</p>
           </Fade>
           {props.afterDataHTML === true ? (
             <div
-              className="highlights"
+              className="container highlights"
               dangerouslySetInnerHTML={{
                 __html: props.afterData,
               }}
             ></div>
           ) : (
-            <div className="highlights">{props.afterData}</div>
+            <div className="container highlights">{props.afterData}</div>
           )}
         </div>
       </div>
