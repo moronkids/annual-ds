@@ -130,9 +130,9 @@
     font-weight: 600;
     font-size: 14px;
     line-height: 19px;
-    max-width: 55px;
+    max-width: fit-content;
     /* identical to box height */
-
+    margin-top: 12px;
     text-align: center;
 
     /* Text - Secondary */
@@ -141,5 +141,52 @@
     @include sm {
         line-height: 30px;
         max-width: unset;
+    }
+}
+.testing {
+    .slick-track {
+        max-width: 1000px !important;
+    }
+    .slick-slide > div {
+        // transform: scale(0.5);
+        margin-left: 30px;
+        margin-top: 30px;
+        transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        @include sm {
+            min-width: 343px !important;
+            min-height: 474px !important;
+            margin-left: 27px;
+            margin-top: 15px;
+        }
+    }
+    .slick-arrow,
+    .slick-next,
+    .slick-prev {
+        display: none !important;
+    }
+    .slick-slide,
+    .slick-active,
+    .slick-current {
+        @include sm {
+            min-width: 343px !important;
+            width: 100%;
+            margin-left: 15px;
+            margin-top: 15px;
+        }
+    }
+
+    .slick-center > div {
+        transform: scale(1);
+    }
+
+    .slider__item > img {
+        width: 100%;
+        height: auto;
+    }
+}
+.fund-person {
+    margin-top: 36px;
+    @include sm {
+        margin-top: 24px;
     }
 }

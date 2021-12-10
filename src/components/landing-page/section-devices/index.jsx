@@ -26,6 +26,15 @@ function Index() {
     <div className="ds-section__devices">
       <div className="container ds-section__devices-title">
         <div className="row justify-content-center text-center">
+          <div className="position-relative">
+            <div
+              id="gadget"
+              className="position-absolute"
+              style={{
+                top: "-160px",
+              }}
+            />
+          </div>
           <div className="col-md-9">
             <Fade bottom duration={1000}>
               <p className="ds-section__devices-title-main">The most monumental smartphones in 2021</p>
@@ -34,7 +43,7 @@ function Index() {
           </div>
         </div>
       </div>
-      
+
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-md-10">
@@ -65,7 +74,7 @@ function Index() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 export default Index;

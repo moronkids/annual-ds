@@ -24,6 +24,15 @@ export default function Index() {
 
   return (
     <div className="ds-section__journey">
+      <div className="position-relative">
+        <div
+          id="readers"
+          className="position-absolute"
+          style={{
+            top: "-160px",
+          }}
+        />
+      </div>
       <div className="container">
         <ReactPlaceholder showLoadingAnimation ready={ready} customPlaceholder={<Skeleton />}>
           <div className="row justify-content-center ds-section__journey-inner">
@@ -45,5 +54,5 @@ export default function Index() {
         </ReactPlaceholder>
       </div>
     </div>
-  )
+  );
 }

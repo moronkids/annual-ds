@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 
 // libs
 import Router from "next/router";
@@ -11,7 +11,10 @@ import HeadersWeb from "src/components/layouts/header";
 // import Sidebar from "components/mobile/layouts/sidebar";
 
 import "src/assets/scss/main-style.scss";
+
 import "styles/nprogress.css";
+import { AppContext } from "providers";
+import { AppWrapper } from "providers";
 
 NProgress.configure({
   minimum: 0.3,
@@ -29,13 +32,13 @@ Router.events.on("routeChangeError", () => NProgress.done());
 const MyApp = ({ Component, pageProps }) => {
   return (
     <>
-      {/* <AppWrapper> */}
-      <HeadersWeb />
-      <Body>
-        <Component {...pageProps} />
-      </Body>
-      <Footers />
-      {/* </AppWrapper> */}
+      <AppWrapper>
+        <HeadersWeb />
+        <Body>
+          <Component {...pageProps} />
+        </Body>
+        <Footers />
+      </AppWrapper>
     </>
   );
 };

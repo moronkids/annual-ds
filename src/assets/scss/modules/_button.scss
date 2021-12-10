@@ -5,6 +5,7 @@
   min-width: 180px;
   border: 2px solid $green;
   border-radius: 4px;
+  margin-top: 48px;
   background: $green;
   text-decoration: none;
   @include font-face($font-opensans, 1.6rem, 600);
@@ -15,7 +16,7 @@
     position: relative;
     color: $white;
     z-index: 2;
-    transition: .5s all ease-in-out;
+    transition: 0.5s all ease-in-out;
   }
   &:hover {
     span {
@@ -25,7 +26,7 @@
       width: 150%;
     }
     &::after {
-      background: url('../../../assets/images/icons/arrow-right-hover.png') 0 0/cover no-repeat;
+      background: url("../../../assets/images/icons/arrow-right-hover.png") 0 0 / cover no-repeat;
     }
   }
   &::before {
@@ -36,11 +37,19 @@
     width: 0;
     height: 100%;
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+31,ffffff+100&1+81,0+100 */
-    background: -moz-linear-gradient(left,  rgba(255,255,255,1) 70%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left,  rgba(255,255,255,1) 70%, rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right,  rgba(255,255,255,1) 70%, rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: -moz-linear-gradient(left, rgba(255, 255, 255, 1) 70%, rgba(255, 255, 255, 0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(
+      left,
+      rgba(255, 255, 255, 1) 70%,
+      rgba(255, 255, 255, 0) 100%
+    ); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 1) 70%,
+      rgba(255, 255, 255, 0) 100%
+    ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
-    transition: .4s all ease-in-out;
+    transition: 0.4s all ease-in-out;
   }
   &::after {
     content: "";
@@ -49,7 +58,7 @@
     top: 0;
     width: 12px;
     height: 12px;
-    background: url('../../../assets/images/icons/arrow-right.png') 0 0/cover no-repeat;
+    background: url("../../../assets/images/icons/arrow-right.png") 0 0 / cover no-repeat;
     margin-left: 15px;
   }
 

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 // libs
 import Image from "next/image";
-import Fade from 'react-reveal/Fade';
+import Fade from "react-reveal/Fade";
 import Slider from "react-slick";
 import ReactPlaceholder from 'react-placeholder/lib';
 import "slick-carousel/slick/slick.css";
@@ -13,12 +13,40 @@ import Skeleton from './Skeleton';
 
 // assets
 import {
-  img1, img10, img11, img12, img13, img14, img15, img16,
-  img17, img18, img19, img2, img20, img21, img22, img23, img24,
-  img25, img26, img27, img28, img29, img3, img30, img31, img32, img33, img4, img5, img6, img7, img8,
-  img9
+  img1,
+  img10,
+  img11,
+  img12,
+  img13,
+  img14,
+  img15,
+  img16,
+  img17,
+  img18,
+  img19,
+  img2,
+  img20,
+  img21,
+  img22,
+  img23,
+  img24,
+  img25,
+  img26,
+  img27,
+  img28,
+  img29,
+  img3,
+  img30,
+  img31,
+  img32,
+  img33,
+  img4,
+  img5,
+  img6,
+  img7,
+  img8,
+  img9,
 } from "src/assets/images/logo";
-
 
 export default function Index() {
   const [ready, setReady] = useState(false);
@@ -36,7 +64,7 @@ export default function Index() {
     responsive: [
       {
         breakpoint: 10000, // a unrealistically big number to cover up greatest screen resolution
-        settings: 'unslick'
+        settings: "unslick",
       },
       {
         breakpoint: 1024,
@@ -45,10 +73,10 @@ export default function Index() {
           slidesToShow: 1,
           slidesToScroll: 1,
           infinite: true,
-          dots: true
-        }
-      }
-    ]
+          dots: true,
+        },
+      },
+    ],
   };
 
   return (
@@ -56,8 +84,16 @@ export default function Index() {
       <div className="ds-section__partners-clients">
         <div className="container">
           <div className="row justify-content-center text-center">
+            <div className="position-relative">
+              <div
+                id="partners"
+                className="position-absolute"
+                style={{
+                  top: "-160px",
+                }}
+              />
+            </div>
             <div className="ds-container">
-
               <Fade bottom duration={1000}>
                 <p className="ds-section__partners-clients-title">Partners and supporters </p>
               </Fade>
@@ -176,5 +212,5 @@ export default function Index() {
         </div>
       </div>
     </div>
-  )
+  );
 }

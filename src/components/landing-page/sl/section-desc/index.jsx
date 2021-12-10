@@ -9,7 +9,8 @@ import Carousel from "src/components/landing-page/sl/section-desc/carousel";
 import DS_funding from "src/components/landing-page/sl/section-funding";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import { DataCarouselActTop } from "src/helpers/dummy-data/dataouract-top";
+import { DataCarouselActBottom } from "src/helpers/dummy-data/dataouract-below";
 // assets
 import personAmir from "styles/assets/masAmir.png";
 import personCEO from "styles/assets/PersonCEO.png";
@@ -34,9 +35,18 @@ function Index(props) {
           !props.reverse ? "-reverse " : " "
         }`}
       >
-        <div className="col-md-auto col-12 text-md-left text-center">
+        <div className="col-md-auto col-12 text-md-left text-center d-flex flex-column mx-auto">
           <Fade bottom>
-            <Image src={decidePhoto(props.photo)} quality={100} />
+            <div
+              style={{ width: "224px", height: "234px" }}
+              className="mx-auto"
+            >
+              <Image
+                src={decidePhoto(props.photo)}
+                quality={100}
+                className="text-center"
+              />
+            </div>
             <div
               id="name-person"
               className="p-0 m-0"
@@ -51,17 +61,17 @@ function Index(props) {
         </div>
         <div className="col-md col-12 text-desc">
           <Fade top>
-            <p>{props.data}</p>
+            <p className="container">{props.data}</p>
           </Fade>
           {props.afterDataHTML === true ? (
             <div
-              className="highlights"
+              className="container highlights"
               dangerouslySetInnerHTML={{
                 __html: props.afterData,
               }}
             ></div>
           ) : (
-            <div className="highlights">{props.afterData}</div>
+            <div className="container highlights">{props.afterData}</div>
           )}
         </div>
       </div>
@@ -71,13 +81,27 @@ function Index(props) {
           width: "90%",
         }}
       />
+      <div className="position-relative">
+        <div
+          id="activities"
+          className="position-absolute"
+          style={{
+            top: "-84px",
+          }}
+        ></div>
+      </div>
       {props.slide && (
         <Fragment>
           <div className="d-flex  justify-content-center mx-auto w-100">
             <h2 className="act">Our Activities</h2>
           </div>
-          <Carousel slidesToScroll={1} />
-          <Carousel slidesToScroll={-1} />
+          <div className="ds-crsl-1">
+            <Carousel slidesToScroll={1} DataCarousel={DataCarouselActTop} />
+            <Carousel
+              slidesToScroll={-1}
+              DataCarousel={DataCarouselActBottom}
+            />
+          </div>
         </Fragment>
       )}
       {props.slide === false && (
