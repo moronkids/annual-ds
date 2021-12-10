@@ -46,5 +46,39 @@
         line-height: 28px;
       }   
     }
+
+    .skeleton {
+      .ds-section__journey {
+        &-img {
+          width: 190px !important;
+          height: 191px !important;
+          @include background-skeleton(50%);
+        }
+
+        &-title {
+          max-width: 450px;
+          height: 40px !important;
+          @include background-skeleton(5px);
+        }
+
+        &-desc {
+          height: 20px !important;
+          @include background-skeleton(5px);
+          &:first-child {
+            margin-bottom: 10px;
+          }
+          &:last-child {
+            width: 70% !important;
+          }
+        }
+      }
+
+      .ds-button {
+        width: 180px !important;
+        height: 50px !important;
+        border: 2px solid #DBDBDB;
+        @include background-skeleton(5px);
+      }
+    }
   }
 }

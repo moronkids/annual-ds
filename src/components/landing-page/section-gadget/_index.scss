@@ -1,72 +1,115 @@
-.ds-section-gadget {
-  padding-top: 100px;
-  background: linear-gradient(180deg, #012A2B 0%, #040404 22.7%, #040404 100%);
-  @include md() {
-    padding-top: 60px;
-  }
+.ds-section {
+  &__gadget {
+    padding-top: 100px;
+    background: linear-gradient(180deg, #012A2B 0%, #040404 22.7%, #040404 100%);
+    @include md() {
+      padding-top: 60px;
+    }
 
-  p {
-    font-family: $font-opensans;
-    color: $white;
-  }
+    p {
+      font-family: $font-opensans;
+      color: $white;
+    }
 
-  &__content {
-    max-width: 920px;
-    gap: 65px;
-    margin: 0 auto;
-       
-    &-bod {
-      position: relative;
-      &::after {
-        content: "";
+    &-content {
+      max-width: 920px;
+      gap: 65px;
+      margin: 0 auto;
+        
+      &-bod {
         position: relative;
-        display: inline-block;
-        width: 90%;
-        padding-bottom: 80px;
-        margin-bottom: 100px;
-        border-bottom: 1px solid $text-primary;
-        @include md() {
-          padding-bottom: 60px;
-          margin-bottom: 60px;
-        }
-      }
-      &-text {
-        @include font-face($font-opensans, 1.8rem);
-        line-height: 30px;
-        margin-bottom: 36px;
-        @include md() {
-          font-size: 1.6rem;
-          line-height: 25px;
-        }
-      }
-
-      &-detail {
-        @include md() {
-          padding: 0 16px;
-        }
-        &-photo {
+        gap: 0 65px;
+        &::after {
+          content: "";
+          position: relative;
+          display: inline-block;
+          width: 90%;
+          padding-bottom: 80px;
+          margin-bottom: 100px;
+          border-bottom: 1px solid $text-primary;
           @include md() {
-            margin-bottom: 28px;
-            text-align: center;
+            padding-bottom: 60px;
+            margin-bottom: 60px;
           }
         }
-
-        &-name {
-          @include font-face($font-opensans, 1.8rem, 700);
-          line-height: 25px;
-          margin-bottom: 4px;
+        &-text {
+          @include font-face($font-opensans, 1.8rem);
+          line-height: 30px;
+          margin-bottom: 36px;
           @include md() {
             font-size: 1.6rem;
-            line-height: 20px;
+            line-height: 25px;
           }
         }
 
-        &-position {
-          @include font-face($font-opensans, 1.6rem);
-          line-height: 21px;
+        &-detail {
           @include md() {
-            font-size: 1.4rem;
-            line-height: 20px;
+            padding: 0 16px;
+          }
+          &-photo {
+            @include md() {
+              margin-bottom: 28px;
+              text-align: center;
+            }
+          }
+
+          &-name {
+            @include font-face($font-opensans, 1.8rem, 700);
+            line-height: 25px;
+            margin-bottom: 4px;
+            @include md() {
+              font-size: 1.6rem;
+              line-height: 20px;
+            }
+          }
+
+          &-position {
+            @include font-face($font-opensans, 1.6rem);
+            line-height: 21px;
+            @include md() {
+              font-size: 1.4rem;
+              line-height: 20px;
+            }
+          }
+        }
+      }
+    }
+
+    .skeleton {
+      .ds-section__gadget-content {
+        &-bod {
+          &-text {
+            height: 30px !important;
+            @include background-skeleton(5px);
+            margin-bottom: 8px;
+            &:first-child { 
+              width: 70% !important;
+            }
+            &:last-child {
+              margin-bottom: 36px;
+            }
+          }
+          &-detail {
+            &-photo {
+              width: 220px !important;
+              height: 234px !important;
+              @include background-skeleton(5px);
+              @include md {
+                margin: 0 auto 28px !important;
+              }
+            }
+
+            &-name {
+              max-width: 200px;
+              height: 25px !important;
+              @include background-skeleton(5px);
+            }
+
+            &-position {
+              max-width: 500px;
+              height: 25px !important;
+              @include background-skeleton(5px);
+            }
           }
         }
       }
