@@ -93,35 +93,33 @@
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
     }
-    .custom-dots {
-        width: 10px;
-        height: 10px;
-        background: #005f61;
-        border-radius: 8px;
-    }
-    .slick-dots li button {
-        width: 20px;
-    }
-    .slick-dots .slick-active button:before {
-        // font-family: slick;
-        font-size: 10px;
-        line-height: 20px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 20px;
-        height: 20px;
-        content: "";
-        text-align: center;
-        opacity: 0.25;
-        color: #005f61;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-    }
-    .slick-dots .slick-active button {
-        background: #005f61;
-        border-radius: 8px;
-        max-height: 10px;
+
+    .slick-dots {
+        @include md() {
+            // bottom: -70px;
+        }
+        li {
+            width: auto;
+            height: auto;
+            button {
+                width: 10px;
+                height: 10px;
+                margin: 0 auto;
+                border-radius: 8px;
+                padding: 0;
+                transition: 0.3s all ease;
+                background: #bfd7d7;
+                &::before {
+                    display: none;
+                }
+            }
+            &.slick-active {
+                button {
+                    width: 28px;
+                    background: $green;
+                }
+            }
+        }
     }
 }
 // .slick-slide > div {

@@ -18,19 +18,52 @@ export default class AutoPlayMethods extends Component {
       autoplay: true,
       autoplaySpeed: 0,
       speed: 5000,
-      infinite: false,
       pauseOnHover: false,
       cssEase: "linear",
-      easing: "linear",
-      pauseOnHover: false,
       responsive: [
+        {
+          breakpoint: 1800,
+          settings: {
+            slidesToShow: 5,
+            slidesToScroll: this.props.slidesToScroll < 0 ? -5 : 5,
+            // infinite: true,
+            // dots: true,
+          },
+        },
+        {
+          breakpoint: 1600,
+          settings: {
+            slidesToShow: 5,
+            slidesToScroll: this.props.slidesToScroll < 0 ? -5 : 5,
+            // infinite: true,
+            // dots: true,
+          },
+        },
+        {
+          breakpoint: 1400,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: this.props.slidesToScroll < 0 ? -4 : 4,
+            // infinite: true,
+            // dots: true,
+          },
+        },
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: this.props.slidesToScroll < 0 ? -4 : 4,
+            // infinite: true,
+            // dots: true,
+          },
+        },
         {
           breakpoint: 1024,
           settings: {
-            slidesToShow: 3,
-            slidesToScroll: this.props.slidesToScroll < 0 ? -3 : 3,
-            infinite: true,
-            dots: true,
+            slidesToShow: 2,
+            slidesToScroll: this.props.slidesToScroll < 0 ? -2 : 2,
+            // infinite: true,
+            // dots: true,
           },
         },
         {
@@ -38,7 +71,7 @@ export default class AutoPlayMethods extends Component {
           settings: {
             slidesToShow: 2,
             slidesToScroll: this.props.slidesToScroll < 0 ? -2 : 2,
-            initialSlide: 2,
+            // initialSlide: 2,
           },
         },
         {
