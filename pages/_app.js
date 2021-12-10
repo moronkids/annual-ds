@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 
 // libs
 import Router from "next/router";
@@ -11,8 +11,10 @@ import HeadersWeb from "src/components/layouts/header";
 // import Sidebar from "components/mobile/layouts/sidebar";
 
 import "src/assets/scss/main-style.scss";
-import { AppWrapper } from "providers";
+
 import "styles/nprogress.css";
+import { AppContext } from "providers";
+import { AppWrapper } from "providers";
 
 NProgress.configure({
   minimum: 0.3,

@@ -37,7 +37,9 @@ function Index(props) {
       >
         <div className="col-md-auto col-12 text-md-left text-center">
           <Fade bottom>
-            <Image src={decidePhoto(props.photo)} quality={100} />
+            <div style={{ width: "224px", height: "234px" }}>
+              <Image src={decidePhoto(props.photo)} quality={100} />
+            </div>
             <div
               id="name-person"
               className="p-0 m-0"
@@ -72,6 +74,15 @@ function Index(props) {
           width: "90%",
         }}
       />
+      <div className="position-relative">
+        <div
+          id="activities"
+          className="position-absolute"
+          style={{
+            top: "-84px",
+          }}
+        ></div>
+      </div>
       {props.slide && (
         <Fragment>
           <div className="d-flex  justify-content-center mx-auto w-100">

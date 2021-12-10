@@ -130,9 +130,9 @@
     font-weight: 600;
     font-size: 14px;
     line-height: 19px;
-    max-width: 55px;
+    max-width: fit-content;
     /* identical to box height */
-
+    margin-top: 12px;
     text-align: center;
 
     /* Text - Secondary */
@@ -182,5 +182,11 @@
     .slider__item > img {
         width: 100%;
         height: auto;
+    }
+}
+.fund-person {
+    margin-top: 36px;
+    @include sm {
+        margin-top: 24px;
     }
 }

@@ -36,6 +36,12 @@ export const startup = [
     h: "28",
   },
   {
+    img: Kredivo,
+    fund: "$225 mio",
+    w: "90",
+    h: "32",
+  },
+  {
     img: Xendit,
     fund: "$214,6 mio",
     w: "96",
@@ -54,10 +60,10 @@ export const startup = [
     h: "38",
   },
   {
-    img: Kredivo,
-    fund: "$225 mio",
-    w: "90",
-    h: "32",
+    img: Ula,
+    fund: "$130,1 mio",
+    w: "61",
+    h: "30",
   },
   {
     img: GudangAda,
@@ -66,10 +72,22 @@ export const startup = [
     h: "31",
   },
   {
-    img: Ula,
-    fund: "$130,1 mio",
-    w: "61",
-    h: "30",
+    img: Bibit,
+    fund: "$95 mio",
+    w: "93",
+    h: "20",
+  },
+  {
+    img: Amartha,
+    fund: "$85,5 mio",
+    w: "119",
+    h: "32",
+  },
+  {
+    img: Sirclo,
+    fund: "$58 mio",
+    w: "112",
+    h: "32",
   },
   {
     img: Halodoc,
@@ -77,12 +95,7 @@ export const startup = [
     w: "115",
     h: "21",
   },
-  {
-    img: Bibit,
-    fund: "$95 mio",
-    w: "93",
-    h: "20",
-  },
+
   {
     img: Tanihub,
     fund: "$65 mio",
@@ -108,10 +121,22 @@ export const startup = [
     h: "38",
   },
   {
+    img: Bukukas,
+    fund: "$60 mio",
+    w: "114",
+    h: "38",
+  },
+  {
     img: Sociolla,
     fund: "$57 mio",
     w: "107",
     h: "26",
+  },
+  {
+    img: Awan_tunai,
+    fund: "$56,2 mio",
+    w: "110",
+    h: "20",
   },
   {
     img: RG,
@@ -119,23 +144,12 @@ export const startup = [
     w: "58",
     h: "32",
   },
+
   {
-    img: Bukukas,
-    fund: "$60 mio",
-    w: "114",
-    h: "38",
-  },
-  {
-    img: Amartha,
-    fund: "$85,5 mio",
-    w: "119",
-    h: "32",
-  },
-  {
-    img: Awan_tunai,
-    fund: "$56,2 mio",
-    w: "110",
-    h: "20",
+    img: Pluang,
+    fund: "$55 mio",
+    w: "111",
+    h: "26",
   },
   {
     img: Pintu,
@@ -149,18 +163,7 @@ export const startup = [
     w: "76",
     h: "40",
   },
-  {
-    img: Sirclo,
-    fund: "$58 mio",
-    w: "112",
-    h: "32",
-  },
-  {
-    img: Pluang,
-    fund: "$55 mio",
-    w: "111",
-    h: "26",
-  },
+
   {
     img: Aruna,
     fund: "$35 mio",

@@ -29,13 +29,12 @@ function Index(props) {
               <div className="col-md-auto col-12 desc my-auto">
                 <div className="desc-title">
                   {props.startuptype === "unicorn"
-                    ? `In 2021 Indonesia has 11 Unicorn*`
+                    ? `In 2021, Indonesia has 11 Unicorns*`
                     : `In 2021, Indonesia has 50 Centaurs*`}
                 </div>
                 <div className="desc-content">
                   {props.startuptype === "unicorn"
-                    ? `Unicorn startups grow so fast in Indonesia. Per November 2021,
-                  we’ve got 7 new unicorn startups! Who's the next unicorn?`
+                    ? `Unicorn startups  grow so fast in Indonesia. Per mid of November 2021,  we’ve got 5 new unicorn startups! Who's the next unicorn?`
                     : `Aspiring unicorn in Indonesia is flourishing! We possibly get more unicorn startups one year ahead.`}
                 </div>
                 <div className="desc-date">*per mid Nov 2021</div>

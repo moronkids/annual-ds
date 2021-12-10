@@ -1,13 +1,30 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import icons from "styles/assets/icons/icon-ds.svg";
 import Image from "next/image";
 import Sidebar from "src/components/layouts/sidebar-mobile";
 import { AppContext } from "providers";
 function index() {
-  const { sidebar, setSideBar } = useContext(AppContext);
+  const {
+    sidebar,
+    setSideBar,
+    setScroll,
+    scroll,
+    activeSection,
+    setActiveSection,
+  } = useContext(AppContext);
+  useEffect(() => {
+    window.onscroll = () =>
+      window.pageYOffset > 10 ? setScroll(true) : setScroll(false);
+
+    return () => (window.onscroll = null);
+  });
   return (
     <>
-      <div className="ds-header d-flex mx-auto sticky-top">
+      <div
+        className={`ds-header d-flex mx-auto sticky-top ${
+          scroll && "active_h"
+        }`}
+      >
         <div className="ds-container d-flex mx-auto d-flex align-items-center my-auto w-100 justify-content-between">
           <div className="iconDS position-relative">
             <div>
@@ -38,16 +55,36 @@ function index() {
           </div>
           <div className="list-menu d-sm-block d-none">
             <ul className="d-flex flex-row justify-content-center align-items-center h-100 my-auto">
-              <li>Activities</li>
-              <li>Startup Data</li>
-              <li>Gadget Data</li>
-              <li>Partner</li>
-              <li>For Readers</li>
+              <a href="#activities" onClick={() => setActiveSection(1)}>
+                <li className={`${activeSection === 1 && "active"}`}>
+                  Activities
+                </li>
+              </a>
+              <a href="#startup" onClick={() => setActiveSection(2)}>
+                <li className={`${activeSection === 2 && "active"}`}>
+                  Startup Data
+                </li>
+              </a>
+              <a href="#gadget" onClick={() => setActiveSection(3)}>
+                <li className={`${activeSection === 3 && "active"}`}>
+                  Gadget Data
+                </li>
+              </a>
+              <a href="#partners" onClick={() => setActiveSection(4)}>
+                <li className={`${activeSection === 4 && "active"}`}>
+                  Partner
+                </li>
+              </a>
+              <a href="#readers" onClick={() => setActiveSection(5)}>
+                <li className={`${activeSection === 5 && "active"}`}>
+                  For Readers
+                </li>
+              </a>
             </ul>
           </div>
         </div>
       </div>
-      <hr className="p-0 m-0 line-btm" />
+
       <Sidebar />
       <div
         className="position-fixed"

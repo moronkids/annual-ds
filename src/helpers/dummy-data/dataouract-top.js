@@ -28,25 +28,4 @@ export const DataCarouselActTop = [
   {
     images: atas7,
   },
-  {
-    images: atas1,
-  },
-  {
-    images: atas2,
-  },
-  {
-    images: atas3,
-  },
-  {
-    images: atas4,
-  },
-  {
-    images: atas5,
-  },
-  {
-    images: atas6,
-  },
-  {
-    images: atas7,
-  },
 ];

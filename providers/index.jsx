@@ -13,10 +13,16 @@ export const AppWrapper = ({ children }) => {
   const [activePages, setActivePages] = useState(null);
   const [sidebar, setSideBar] = useState(false);
   const [query, setQuery] = useState(null);
+  const [scroll, setScroll] = useState(false);
+  const [activeSection, setActiveSection] = useState(0);
   React.useEffect(() => {}, []);
 
   //
   const values = {
+    activeSection,
+    setActiveSection,
+    scroll,
+    setScroll,
     device,
     setDevice,
     toggle,
