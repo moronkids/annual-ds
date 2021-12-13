@@ -3,7 +3,7 @@ import React from "react";
 // libs
 import Image from "next/image";
 import Fade from "react-reveal/Fade";
-
+import Link from "next/link";
 // assets
 import { DataDevices } from "src/helpers/dummy-data/datadevices";
 
@@ -50,10 +50,12 @@ export default function Index() {
                         <div className="ds-section__devices-item-images-bg"></div>
                       </Fade>
                       <Fade top duration={1500}>
-                        <Image
-                          src={value.images}
-                          className="ds-section__devices-item-images-inner"
-                        ></Image>
+                        <a href={value.link} target="_blank">
+                          <Image
+                            src={value.images}
+                            className="ds-section__devices-item-images-inner"
+                          ></Image>
+                        </a>
                       </Fade>
                     </div>
 

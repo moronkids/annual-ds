@@ -92,7 +92,7 @@ function Index(props) {
       </div>
       {props.slide && (
         <Fragment>
-          <div className="d-flex  justify-content-center mx-auto w-100">
+          <div className="d-flex  justify-content-end mx-auto w-100">
             <h2 className="act">Our Activities</h2>
           </div>
           <div className="ds-crsl-1">

@@ -99,6 +99,7 @@ export default class AutoPlayMethods extends Component {
                     maxHeight: "160px",
                     borderRadius: "10px",
                     overflow: "hidden",
+                    paddingBottom: "20px",
                   }}
                   className="slide sd"
                 >
