@@ -81,3 +81,29 @@
   -o-animation: #{$str};
   animation: #{$str};      
 }
+
+
+@mixin background-skeleton($border-radius:"") {
+  @if ($border-radius != "") {
+    border-radius: #{$border-radius};
+  } @else {
+    border-radius: 0;
+  }
+  position: relative;
+  overflow: hidden;
+  background: #DBDBDB;
+  &:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b5b5b5+0,d5d5d5+100 */
+    background: #DBDBDB; /* Old browsers */
+    background: -moz-linear-gradient(left,  #DBDBDB 0%, #b5b5b5 30%, #DBDBDB 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  #DBDBDB 0%,#b5b5b5 30%, #DBDBDB 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  #DBDBDB 0%,#b5b5b5 30%, #DBDBDB 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5b5b5', endColorstr='#d5d5d5',GradientType=1 ); /* IE6-9 */
+  
+    @include animation('skeleton 1.2s infinite');
+  }
+}

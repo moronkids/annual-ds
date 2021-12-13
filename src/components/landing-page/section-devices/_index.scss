@@ -78,6 +78,35 @@
           font-size: 1.6rem;
         }
       }
+
+      &.skeleton {
+        .ds-section__devices-item {
+          &-images {
+            width: 132px !important;
+            height: 184px !important;
+            margin: 0 auto 12px !important;
+            @include background-skeleton(5px);
+            @include md() {
+              width: 100% !important;
+            }
+          }
+          
+          &-name {
+            width: 130px !important;
+            height: 27px !important;
+            margin: 0 auto !important;
+            @include background-skeleton(5px);
+            @include md() {
+              width: 100% !important;
+            }
+          }
+        }
+      }
+    }
+
+    @include keyframes(skeleton) {
+      0% { left: -100%; }
+      100% { left: 200%; }
     }
   }
 }

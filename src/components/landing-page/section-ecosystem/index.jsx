@@ -29,12 +29,12 @@ export default function Index() {
                     <div className="ds-section__ecosystem-items">
                       <div className="row">
                         <div className="col-md-auto ds-section__ecosystem-items-img">
-                          <Image src={bell}></Image>
+                          <Image src={bell} width={120} height={120}></Image>
                         </div>
                         <div className="col-md">
-                          <p className="ds-section__ecosystem-items-text">Get unlimited access to discover the best minds of innovation in Indonesia!</p>
+                          <p className="ds-section__ecosystem-items-text">Get unlimited access to discover<br className="desktop-only" /> the best minds of innovation in<br className="desktop-only" /> Indonesia!</p>
 
-                          <a href="https://dailysocial.id/" target="_blank" className="ds-button"><span>Get connected</span></a>
+                          <a href="https://dailysocial.id/" target="_blank" className="ds-button"><span>Let’s subscribe</span></a>
                         </div>
                       </div>
                     </div>
@@ -46,10 +46,10 @@ export default function Index() {
                     <div className="ds-section__ecosystem-items">
                       <div className="row">
                         <div className="col-md-auto  ds-section__ecosystem-items-img">
-                          <Image src={connect}></Image>
+                          <Image src={connect} width={120} height={120}></Image>
                         </div>
                         <div className="col-md">
-                          <p className="ds-section__ecosystem-items-text">Get more experience, connections and many more for the growth of your startup</p>
+                          <p className="ds-section__ecosystem-items-text">Get more experience, connections<br className="desktop-only" /> and many more for the growth of<br className="desktop-only" /> your startup</p>
 
                           <a href="https://dailysocial.id/" target="_blank" className="ds-button"><span>Let me in</span></a>
                         </div>

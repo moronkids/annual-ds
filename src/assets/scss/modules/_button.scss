@@ -11,6 +11,7 @@
   @include font-face($font-opensans, 1.6rem, 600);
   padding: 11px 20px;
   overflow: hidden;
+  text-align: center;
   span {
     position: relative;
     color: $white;
@@ -54,6 +55,7 @@
     content: "";
     position: relative;
     display: inline-block;
+    top: 0;
     width: 12px;
     height: 12px;
     background: url("../../../assets/images/icons/arrow-right.png") 0 0 / cover no-repeat;

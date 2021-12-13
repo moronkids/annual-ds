@@ -1,10 +1,10 @@
 .ds-section {
-  &-partners {
+  &__partners {
     padding-top: 80px;
     @include md() {
       padding-top: 60px;
     }
-    &__clients {
+    &-clients {
       margin-bottom: 100px;
       &-title {
         @include font-face($font-opensans, 3.6rem, 700);
@@ -70,56 +70,17 @@
         }
       }
     }
-  }
 
-  &__content {
-    &-bod {
-      max-width: 920px;
-      gap: 65px;
-      margin: 0 auto 80px;
-      padding-bottom: 94px;
-      border-bottom: 1px solid #CECECE;
-      @include md() {
-        margin: 0 auto 60px;
-        padding-bottom: 60px;
-      }
-      &-detail {
-        &-desc {
-          @include font-face($font-opensans, 1.8rem);
-          line-height: 30px;
-          margin-bottom: 0;
-          @include md() {
-            font-size: 1.6rem;
-            line-height: 25px;
-          }
-        }
 
-        &-photo {
-          > div {
-            margin-bottom: 12px !important;
-          }
-          @include md() {
-            margin-bottom: 28px;
-            text-align: center;
-          }
-        }
-
-        &-name {
-          @include font-face($font-opensans, 1.8rem, 700);
-          line-height: 25px;
-          margin-bottom: 4px;
-          @include md() {
-            font-size: 1.6rem;
-            line-height: 20px;
-          }
-        }
-
-        &-position {
-          @include font-face($font-opensans, 1.6rem);
-          line-height: 21px;
-          @include md() {
-            font-size: 1.4rem;
-            line-height: 20px;
+    .skeleton {
+      &.ds-section__partners-clients-list {
+        ul {
+          li {
+            .rect-shape {
+              width: 120px !important;
+              height: 70px !important;
+              @include background-skeleton(5px);
+            }
           }
         }
       }
