@@ -27,6 +27,27 @@ export default class SimpleSlider extends Component {
             }}
           >
             <Image
+              src={Img3}
+              // width={343}
+              // height={474}
+              layout="responsive"
+              objectFit="cover"
+              quality={100}
+              style={{
+                borderRadius: "10px",
+              }}
+            />
+          </div>
+          <div
+            className="slider_"
+            style={{
+              maxWidth: "343px",
+              maxHeight: "474px",
+              width: "100%",
+              height: "100%",
+            }}
+          >
+            <Image
               src={Img1}
               // width={343}
               // height={474}
@@ -49,27 +70,6 @@ export default class SimpleSlider extends Component {
           >
             <Image
               src={Img2}
-              // width={343}
-              // height={474}
-              layout="responsive"
-              objectFit="cover"
-              quality={100}
-              style={{
-                borderRadius: "10px",
-              }}
-            />
-          </div>
-          <div
-            className="slider_"
-            style={{
-              maxWidth: "343px",
-              maxHeight: "474px",
-              width: "100%",
-              height: "100%",
-            }}
-          >
-            <Image
-              src={Img3}
               // width={343}
               // height={474}
               layout="responsive"

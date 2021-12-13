@@ -8,28 +8,34 @@ function index() {
   return (
     <div className="ds-footer d-flex justify-content-center align-items-center">
       <div className="ds-container d-sm-flex d-block justify-content-md-between justify-content-center align-items-center my-auto h-100 w-100 mx-auto p-sm-auto p-0 m-0">
-        <div className="content">
+        <div className="content d-flex justify-content-sm-start justify-content-center align-items-center">
           Copyright © 2021 - Annual Report DailySocial.id
         </div>
         <div>
           <ul className="d-flex flex-row my-auto mx-auto text-center justify-content-center">
             <li>
-              <a href="https://www.facebook.com/dailysocial/">
+              <a href="https://www.facebook.com/dailysocial/" targer="_blank">
                 <Image src={facebook} quality={100}></Image>
               </a>
             </li>
             <li>
-              <a href="https://twitter.com/dailysocial?s=20">
+              <a href="https://twitter.com/dailysocial?s=20" targer="_blank">
                 <Image src={twitter} quality={100}></Image>
               </a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/company/dailysocial-id">
+              <a
+                href="https://www.linkedin.com/company/dailysocial-id"
+                targer="_blank"
+              >
                 <Image src={linkedin} quality={100}></Image>
               </a>
             </li>
             <li>
-              <a href="https://www.instagram.com/dailysocial.id/?hl=en">
+              <a
+                href="https://www.instagram.com/dailysocial.id/?hl=en"
+                targer="_blank"
+              >
                 <Image src={ig} quality={100}></Image>
               </a>
             </li>

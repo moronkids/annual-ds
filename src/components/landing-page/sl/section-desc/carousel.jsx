@@ -35,7 +35,7 @@ export default class AutoPlayMethods extends Component {
                     overflow: "hidden",
                     marginBottom: "30px",
                     marginRight: "30px",
-                    boxShadow: "0 3px 10px rgb(0 0 0 / 0.2)",
+                    boxShadow: "0 3px 10px #F4F4F4",
                   }}
                   className="slide sd"
                 >
@@ -46,7 +46,7 @@ export default class AutoPlayMethods extends Component {
                     quality={100}
                     style={{
                       borderRadius: "10px",
-                      boxShadow: "0 3px 10px rgb(0 0 0 / 0.2)",
+                      boxShadow: "0 3px 10px #F4F4F4",
                     }}
                   />
                 </div>

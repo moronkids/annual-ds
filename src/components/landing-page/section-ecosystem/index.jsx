@@ -44,6 +44,9 @@ export default function Index() {
                             href="https://dailysocial.id/subscription"
                             target="_blank"
                             className="ds-button"
+                            style={{
+                              marginTop: "0px",
+                            }}
                           >
                             <span>Let’s subscribe</span>
                           </a>
@@ -72,6 +75,9 @@ export default function Index() {
                             href="https://connect.dailysocial.id"
                             target="_blank"
                             className="ds-button"
+                            style={{
+                              marginTop: "0px",
+                            }}
                           >
                             <span>Let me in</span>
                           </a>

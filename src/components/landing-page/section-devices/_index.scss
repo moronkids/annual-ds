@@ -58,6 +58,8 @@
           height: 100%;
           bottom: 0;
           background: url("../../../assets/images/pattern/pattern-devices.png") 0 100% / contain no-repeat;
+          width: 220px;
+          height: 100px;
           @include sm {
             max-height: 64px !important;
             width: 142px !important;
@@ -82,7 +84,7 @@
       &.skeleton {
         .ds-section__devices-item {
           &-images {
-            width: 132px !important;
+            width: 157px !important;
             height: 184px !important;
             margin: 0 auto 12px !important;
             @include background-skeleton(5px);
@@ -90,7 +92,7 @@
               width: 100% !important;
             }
           }
-          
+
           &-name {
             width: 130px !important;
             height: 27px !important;
@@ -105,8 +107,12 @@
     }
 
     @include keyframes(skeleton) {
-      0% { left: -100%; }
-      100% { left: 200%; }
+      0% {
+        left: -100%;
+      }
+      100% {
+        left: 200%;
+      }
     }
   }
 }
@@ -118,7 +124,7 @@
   div {
     transform: translate(-50%, 0) !important;
     max-height: 184px !important;
-    width: 132px !important;
+    width: 157px !important;
     left: 50% !important;
 
     @include sm {

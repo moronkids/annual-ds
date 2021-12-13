@@ -61,6 +61,9 @@ export default function Index() {
                   href="https://dsinnovate.com/contact"
                   target="_blank"
                   className="ds-button"
+                  style={{
+                    marginTop: "0px",
+                  }}
                 >
                   <span>Discuss with us</span>
                 </a>

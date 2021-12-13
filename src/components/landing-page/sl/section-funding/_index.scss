@@ -4,7 +4,7 @@
         padding-top: 60px;
     }
     &-startup {
-        padding-bottom: 82px;
+        // padding-bottom: 82px;
         .wrapping-box {
             background: #ffffff;
             box-shadow: 0px 0px 20px #eaeaea;
@@ -58,6 +58,24 @@
         @include sm {
             font-size: 1.6rem;
             line-height: 2.8rem;
+        }
+        &-date {
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 26px;
+            text-align: right;
+            color: #4e4e4e;
+            flex: none;
+            order: 1;
+            flex-grow: 0;
+            margin: 28px 0px;
+            padding-bottom: 82px;
+            @include sm {
+                font-size: 1.6rem;
+                line-height: 2.8rem;
+            }
         }
     }
     .number {
