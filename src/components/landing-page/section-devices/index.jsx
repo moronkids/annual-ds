@@ -61,6 +61,7 @@ export default function Index() {
                             <Image
                               layout="fill"
                               src={value.images}
+                              objectFit="contain"
                               className="ds-section__devices-item-images-inner"
                             ></Image>
                           </div>
