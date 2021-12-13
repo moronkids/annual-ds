@@ -12,7 +12,7 @@ export default function Index() {
   return (
     <div className="ds-section">
       <div className="ds-section__ecosystem">
-        <div className="container">
+        <div className="ds-container justify-content-center align-items-center mx-auto">
           <div className="row text-center">
             <div className="col-md">
               <Fade bottom duration={1000}>
