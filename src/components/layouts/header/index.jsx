@@ -62,17 +62,17 @@ function index() {
               </a>
               <a href="#startup" onClick={() => setActiveSection(2)}>
                 <li className={`${activeSection === 2 && "active"}`}>
-                  Startup Data
+                  Startups
                 </li>
               </a>
               <a href="#gadget" onClick={() => setActiveSection(3)}>
                 <li className={`${activeSection === 3 && "active"}`}>
-                  Gadget Data
+                  Tech & Esports
                 </li>
               </a>
               <a href="#partners" onClick={() => setActiveSection(4)}>
                 <li className={`${activeSection === 4 && "active"}`}>
-                  Partner
+                  Partners
                 </li>
               </a>
               <a href="#readers" onClick={() => setActiveSection(5)}>

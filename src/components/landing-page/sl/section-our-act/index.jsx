@@ -29,25 +29,25 @@ function Index() {
                   />
                   <div className="wrapping position-absolute">
                     <>
-                      <div className="number">6.636</div>
+                      <div className="number">6,636</div>
                       <div className="desc">
                         Hours of engagement with startup communities
                       </div>
                     </>
                     <>
-                      <div className="number">594.760</div>
+                      <div className="number">594,760</div>
                       <div className="desc">
                         Startup enthusiast come together to our event
                       </div>
                     </>
                     <>
-                      <div className="number">592.432</div>
+                      <div className="number">592,432</div>
                       <div className="desc">
                         Times people streamed our video content
                       </div>
                     </>
                     <>
-                      <div className="number">1.535</div>
+                      <div className="number">1,535</div>
                       <div className="desc">
                         Founders and entrepreneurs joined our accelerator and
                         incubation programs

@@ -47,6 +47,11 @@ function Index(props) {
             </Slide>
           </div>
         </div>
+        <div className="ds-startup-type__btn-more d-flex mx-auto">
+          <p>
+            Read more at Startup Report 2021 <i>(coming soon)</i>
+          </p>
+        </div>
       </div>
     </>
   );

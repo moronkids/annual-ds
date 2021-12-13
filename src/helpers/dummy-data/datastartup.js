@@ -25,7 +25,7 @@ import Ajaib from "styles/assets/icons/company/Ajaib.png";
 export const startup = [
   {
     img: Gojek,
-    fund: "$1,3 bio",
+    fund: "$1.3 bio",
     w: "77",
     h: "32",
   },
@@ -43,7 +43,7 @@ export const startup = [
   },
   {
     img: Xendit,
-    fund: "$214,6 mio",
+    fund: "$214.6 mio",
     w: "96",
     h: "28",
   },
@@ -61,7 +61,7 @@ export const startup = [
   },
   {
     img: Ula,
-    fund: "$130,1 mio",
+    fund: "$130.1 mio",
     w: "61",
     h: "30",
   },
@@ -134,7 +134,7 @@ export const startup = [
   },
   {
     img: Awan_tunai,
-    fund: "$56,2 mio",
+    fund: "$56.2 mio",
     w: "110",
     h: "20",
   },

@@ -45,16 +45,25 @@ export default function Index() {
               {DataDevices.map((value, index) => (
                 <div className="col-md-3 col-6" key={index}>
                   <div className="ds-section__devices-item">
-                    <div className="ds-section__devices-item-images">
+                    <div className="ds-section__devices-item-images d-flex justify-content-center align-items-center mx-auto">
                       <Fade duration={3500}>
                         <div className="ds-section__devices-item-images-bg"></div>
                       </Fade>
                       <Fade top duration={1500}>
-                        <a href={value.link} target="_blank">
-                          <Image
-                            src={value.images}
-                            className="ds-section__devices-item-images-inner"
-                          ></Image>
+                        <a href={value.link} target="_blank" className="w-100">
+                          <div
+                            className="wrap-img"
+                            style={{
+                              display: "flex",
+                              justifyContent: "center",
+                            }}
+                          >
+                            <Image
+                              layout="fill"
+                              src={value.images}
+                              className="ds-section__devices-item-images-inner"
+                            ></Image>
+                          </div>
                         </a>
                       </Fade>
                     </div>
