@@ -10,34 +10,49 @@ function Index() {
       style={{ zIndex: "97" }}
     >
       <div
-        onClick={() => setActiveSection(1)}
+        onClick={() => {
+          setActiveSection(1);
+          setSideBar(!sidebar);
+        }}
         className={`text-menu bordered_ ${activeSection === 1 && "active"}`}
       >
-        Activities
+        <a href="#activities">Activities</a>
       </div>
       <div
-        onClick={() => setActiveSection(2)}
+        onClick={() => {
+          setActiveSection(2);
+          setSideBar(!sidebar);
+        }}
         className={`text-menu bordered_ ${activeSection === 2 && "active"}`}
       >
-        Startup
+        <a href="#startup">Startups</a>
       </div>
       <div
-        onClick={() => setActiveSection(3)}
+        onClick={() => {
+          setActiveSection(3);
+          setSideBar(!sidebar);
+        }}
         className={`text-menu bordered_ ${activeSection === 3 && "active"}`}
       >
-        Tech & Esports
+        <a href="#gadget">Tech & Esports</a>
       </div>
       <div
-        onClick={() => setActiveSection(4)}
+        onClick={() => {
+          setActiveSection(4);
+          setSideBar(!sidebar);
+        }}
         className={`text-menu bordered_ ${activeSection === 4 && "active"}`}
       >
-        Partners
+        <a href="#partners">Partners</a>
       </div>
       <div
-        onClick={() => setActiveSection(5)}
+        onClick={() => {
+          setActiveSection(5);
+          setSideBar(!sidebar);
+        }}
         className={`text-menu ${activeSection === 5 && "active"}`}
       >
-        For Readers
+        <a href="#readers">For Readers</a>
       </div>
     </div>
   );

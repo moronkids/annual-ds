@@ -102,3 +102,13 @@
     width: 100px !important;
   }
 }
+#ceo-section,
+#gadget,
+#activities,
+#readers,
+#partners,
+#startup {
+  @include sm {
+    top: -84px !important;
+  }
+}

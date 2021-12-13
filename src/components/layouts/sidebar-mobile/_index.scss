@@ -23,6 +23,10 @@
     .active {
         color: #005f61;
     }
+    a {
+        text-decoration: unset !important;
+        color: unset !important;
+    }
 }
 
 .showBar {

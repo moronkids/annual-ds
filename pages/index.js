@@ -55,7 +55,7 @@ export default function Home() {
 
       <SectionStartUp reverse={false} startuptype={"unicorn"} />
 
-      <SectionStartUp reverse={true} startuptype={"centaur"} />
+      <SectionStartUp reverse={true} startuptype={"centaur"} readmore={true} />
       <SectionReportLaunched />
       <SectionGadget />
 

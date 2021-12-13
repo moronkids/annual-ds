@@ -21,10 +21,15 @@ function Index() {
         </div>
         <div className="w-100 h-100">
           <div className="ds-crsl-1">
-            <Carousel slidesToScroll={1} DataCarousel={DataCarouselReportTop} />
+            <Carousel
+              slidesToScroll={1}
+              DataCarousel={DataCarouselReportTop}
+              direction="right"
+            />
             <Carousel
               slidesToScroll={-1}
               DataCarousel={DataCarouselReportBottom}
+              direction="left"
             />
           </div>
         </div>

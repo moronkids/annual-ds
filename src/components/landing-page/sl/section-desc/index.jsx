@@ -28,6 +28,17 @@ function Index(props) {
   useEffect(() => {}, []);
   return (
     <div className="ds-section-desc">
+      {props.photo === "rama" && (
+        <div className="position-relative">
+          <div
+            id="ceo-section"
+            className="position-absolute"
+            style={{
+              top: "-160px",
+            }}
+          />
+        </div>
+      )}
       <div
         className={`ds-container ds-section-desc-content col-12 d-flex flex-md${
           props.reverse ? "-row-reverse " : "-row "
@@ -92,14 +103,19 @@ function Index(props) {
       </div>
       {props.slide && (
         <Fragment>
-          <div className="d-flex  justify-content-end mx-auto w-100">
-            <h2 className="act">Our Activities</h2>
+          <div className="d-flex  justify-content-center mx-auto w-100">
+            <h2 className="act pb-sm-5 pb-0">Our Activities</h2>
           </div>
           <div className="ds-crsl-1">
-            <Carousel slidesToScroll={1} DataCarousel={DataCarouselActTop} />
+            <Carousel
+              slidesToScroll={1}
+              DataCarousel={DataCarouselActTop}
+              direction="right"
+            />
             <Carousel
               slidesToScroll={-1}
               DataCarousel={DataCarouselActBottom}
+              direction="left"
             />
           </div>
         </Fragment>
