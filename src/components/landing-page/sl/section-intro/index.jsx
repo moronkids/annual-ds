@@ -8,7 +8,7 @@ import Fade from "react-reveal/Fade";
 import Btn from "src/components/landing-page/sl/section-intro/button";
 
 // assets
-import HeroIntro from "styles/assets/Hero-intro.png";
+import HeroIntro from "src/assets/images/illustration/hero.png";
 
 function index() {
   return (

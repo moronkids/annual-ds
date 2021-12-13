@@ -33,8 +33,9 @@ export default class AutoPlayMethods extends Component {
                     maxHeight: "160px",
                     borderRadius: "10px",
                     overflow: "hidden",
-                    marginBottom: "20px",
-                    marginRight: "20px",
+                    marginBottom: "30px",
+                    marginRight: "30px",
+                    boxShadow: "0 3px 10px rgb(0 0 0 / 0.2)",
                   }}
                   className="slide sd"
                 >
@@ -45,6 +46,7 @@ export default class AutoPlayMethods extends Component {
                     quality={100}
                     style={{
                       borderRadius: "10px",
+                      boxShadow: "0 3px 10px rgb(0 0 0 / 0.2)",
                     }}
                   />
                 </div>

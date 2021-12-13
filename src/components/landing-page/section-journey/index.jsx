@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 // libs
 import Image from "next/image";
-import Fade from 'react-reveal/Fade';
-import ReactPlaceholder from 'react-placeholder/lib';
+import Fade from "react-reveal/Fade";
+import ReactPlaceholder from "react-placeholder/lib";
 
 // components
-import Skeleton from './Skeleton';
+import Skeleton from "./Skeleton";
 
 // assets
 import journey from "src/assets/images/illustration/journey.png";
@@ -18,7 +18,7 @@ export default function Index() {
     setTimeout(() => {
       setReady(true);
     }, 2000);
-  }
+  };
 
   checkReady();
 
@@ -34,7 +34,11 @@ export default function Index() {
         />
       </div>
       <div className="container">
-        <ReactPlaceholder showLoadingAnimation ready={ready} customPlaceholder={<Skeleton />}>
+        <ReactPlaceholder
+          showLoadingAnimation
+          ready={ready}
+          customPlaceholder={<Skeleton />}
+        >
           <div className="row justify-content-center ds-section__journey-inner">
             <div className="col-md-auto">
               <Fade bottom duration={1000}>
@@ -45,9 +49,21 @@ export default function Index() {
             </div>
             <div className="col-md">
               <Fade right duration={1500}>
-                <p className="ds-section__journey-title">Eager to be part of our journey?</p>
-                <p className="ds-section__journey-desc">Learn how we work and collaborate with our corporate<br className="desktop-only" /> supporters and partners then bring impact to their business.</p>
-                <a href="https://dailysocial.id/" target="_blank" className="ds-button"><span>Discuss with us</span></a>
+                <p className="ds-section__journey-title">
+                  Eager to be part of our journey?
+                </p>
+                <p className="ds-section__journey-desc">
+                  Learn how we work and collaborate with our corporate
+                  <br className="desktop-only" /> supporters and partners then
+                  bring impact to their business.
+                </p>
+                <a
+                  href="https://dsinnovate.com/contact"
+                  target="_blank"
+                  className="ds-button"
+                >
+                  <span>Discuss with us</span>
+                </a>
               </Fade>
             </div>
           </div>

@@ -56,7 +56,7 @@ function Index() {
                   <Fragment key={i}>
                     <Slide bottom>
                       <div className="grid-cell">
-                        <div className="cell-content d-flex flex-column justify-content-center align-items-center">
+                        <div className="cell-content d-flex flex-column justify-content-end pb-4 align-items-center">
                           <div
                             className="img position-relative col-6 d-flex mx-auto"
                             style={{
