@@ -83,9 +83,12 @@ function Index() {
             </div>
           </div>
         </div>
-        <p className="text-right w-100  desc-date">*per mid of Nov 2021</p>
+        <p className="text-right w-100 d-sm-block d-none  desc-date">
+          *per mid of Nov 2021
+        </p>
         {/* <div className="testing d-sm-none d-block"> */}
         <div className="w-100 h-100 ds-crsl-2 d-md-none d-block">
+          <p className="text-right w-100 desc-date">*per mid of Nov 2021</p>
           <Carousel />
         </div>
         {/* </div> */}

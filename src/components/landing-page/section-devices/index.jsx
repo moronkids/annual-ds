@@ -24,7 +24,7 @@ export default function Index() {
           <div className="col-md-9">
             <Fade bottom duration={1000}>
               <p className="ds-section__devices-title-main">
-                The most famous
+                The most monumental
                 <br className="mobile-only" /> smartphone in 2021
               </p>
               <p className="ds-section__devices-title-sub">

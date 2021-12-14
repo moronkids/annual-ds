@@ -18,7 +18,7 @@ export default class AutoPlayMethods extends Component {
           direction={this.props.direction}
           pauseOnHover={true}
           speed={40}
-          gradientWidth={100}
+          gradientWidth={30}
         >
           {this.props.DataCarousel?.map((val, i) => {
             return (

@@ -14,19 +14,19 @@ function index() {
         <div>
           <ul className="d-flex flex-row my-auto mx-auto text-center justify-content-center">
             <li>
-              <a href="https://www.facebook.com/dailysocial/" targer="_blank">
+              <a href="https://www.facebook.com/dailysocial/" target="_blank">
                 <Image src={facebook} quality={100}></Image>
               </a>
             </li>
             <li>
-              <a href="https://twitter.com/dailysocial?s=20" targer="_blank">
+              <a href="https://twitter.com/dailysocial?s=20" target="_blank">
                 <Image src={twitter} quality={100}></Image>
               </a>
             </li>
             <li>
               <a
                 href="https://www.linkedin.com/company/dailysocial-id"
-                targer="_blank"
+                target="_blank"
               >
                 <Image src={linkedin} quality={100}></Image>
               </a>
@@ -34,7 +34,7 @@ function index() {
             <li>
               <a
                 href="https://www.instagram.com/dailysocial.id/?hl=en"
-                targer="_blank"
+                target="_blank"
               >
                 <Image src={ig} quality={100}></Image>
               </a>

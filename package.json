@@ -19,6 +19,7 @@
     "react-placeholder": "^4.1.0",
     "react-reveal": "^1.2.2",
     "react-slick": "^0.28.1",
+    "react-update-url-on-scroll": "^3.5.0",
     "sass": "^1.44.0",
     "slick-carousel": "^1.8.1",
     "swiper": "^7.3.1"
