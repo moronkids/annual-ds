@@ -28,6 +28,7 @@ export default class SimpleSlider extends Component {
             }}
           >
             <Image
+              loading="eager"
               src={Img1}
               // width={343}
               // height={474}
@@ -50,6 +51,7 @@ export default class SimpleSlider extends Component {
             }}
           >
             <Image
+              loading="eager"
               src={Img2}
               // width={343}
               // height={474}
@@ -73,6 +75,7 @@ export default class SimpleSlider extends Component {
           >
             <Image
               src={Img3}
+              loading="eager"
               // width={343}
               // height={474}
               layout="responsive"

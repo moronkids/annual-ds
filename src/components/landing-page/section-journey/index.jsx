@@ -44,7 +44,12 @@ export default function Index() {
               <Fade bottom duration={1000}>
                 <div className="ds-section__journey-img">
                   <a href="https://dsinnovate.com/contact">
-                    <Image src={journey} width={190} height={190}></Image>
+                    <Image
+                      loading="eager"
+                      src={journey}
+                      width={190}
+                      height={190}
+                    ></Image>
                   </a>
                 </div>
               </Fade>

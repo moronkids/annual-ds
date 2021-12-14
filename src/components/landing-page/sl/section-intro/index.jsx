@@ -26,7 +26,7 @@ function index() {
 
         <Fade right>
           <div className="img col-md-5 col-12 text-md-right text-center ">
-            <Image src={HeroIntro} quality={100}></Image>
+            <Image src={HeroIntro} quality={100} loading="eager"></Image>
           </div>
         </Fade>
       </div>

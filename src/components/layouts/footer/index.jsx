@@ -15,12 +15,12 @@ function index() {
           <ul className="d-flex flex-row my-auto mx-auto text-center justify-content-center">
             <li>
               <a href="https://www.facebook.com/dailysocial/" target="_blank">
-                <Image src={facebook} quality={100}></Image>
+                <Image src={facebook} quality={100} loading="eager"></Image>
               </a>
             </li>
             <li>
               <a href="https://twitter.com/dailysocial?s=20" target="_blank">
-                <Image src={twitter} quality={100}></Image>
+                <Image src={twitter} quality={100} loading="eager"></Image>
               </a>
             </li>
             <li>
@@ -28,7 +28,7 @@ function index() {
                 href="https://www.linkedin.com/company/dailysocial-id"
                 target="_blank"
               >
-                <Image src={linkedin} quality={100}></Image>
+                <Image src={linkedin} quality={100} loading="eager"></Image>
               </a>
             </li>
             <li>
@@ -36,7 +36,7 @@ function index() {
                 href="https://www.instagram.com/dailysocial.id/?hl=en"
                 target="_blank"
               >
-                <Image src={ig} quality={100}></Image>
+                <Image src={ig} quality={100} loading="eager"></Image>
               </a>
             </li>
           </ul>

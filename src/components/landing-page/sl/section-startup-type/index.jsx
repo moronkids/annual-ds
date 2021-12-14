@@ -42,7 +42,11 @@ function Index(props) {
             </Slide>
             <Slide bottom>
               <div className="col-md col-12 img">
-                <Image src={decidePhoto(props.startuptype)} quality={100} />
+                <Image
+                  src={decidePhoto(props.startuptype)}
+                  quality={100}
+                  loading="eager"
+                />
               </div>
             </Slide>
           </div>

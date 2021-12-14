@@ -110,115 +110,115 @@ export default function Index() {
                     <Fade bottom duration={1000}>
                       <ul>
                         <li>
-                          <Image src={img1}></Image>
+                          <Image src={img1} loading="eager"></Image>
                         </li>
                         <li>
-                          <Image src={img2}></Image>
+                          <Image src={img2} loading="eager"></Image>
                         </li>
                         <li>
-                          <Image src={img3}></Image>
+                          <Image src={img3} loading="eager"></Image>
                         </li>
                         <li>
-                          <Image src={img4}></Image>
+                          <Image src={img4} loading="eager"></Image>
                         </li>
                         <li>
-                          <Image src={img5}></Image>
+                          <Image src={img5} loading="eager"></Image>
                         </li>
                         <li>
-                          <Image src={img6}></Image>
+                          <Image src={img6} loading="eager"></Image>
                         </li>
                         <li>
-                          <Image src={img7}></Image>
+                          <Image src={img7} loading="eager"></Image>
                         </li>
                         <li>
-                          <Image src={img8}></Image>
+                          <Image src={img8} loading="eager"></Image>
                         </li>
                       </ul>
                     </Fade>
                     <Fade bottom duration={1500}>
                       <ul>
                         <li>
-                          <Image src={img9}></Image>
+                          <Image src={img9} loading="eager"></Image>
                         </li>
                         <li>
-                          <Image src={img10}></Image>
+                          <Image src={img10} loading="eager"></Image>
                         </li>
                         <li>
-                          <Image src={img11}></Image>
+                          <Image src={img11} loading="eager"></Image>
                         </li>
                         <li>
-                          <Image src={img12}></Image>
+                          <Image src={img12} loading="eager"></Image>
                         </li>
                         <li>
-                          <Image src={img13}></Image>
+                          <Image src={img13} loading="eager"></Image>
                         </li>
                         <li>
-                          <Image src={img14}></Image>
+                          <Image src={img14} loading="eager"></Image>
                         </li>
                         <li>
-                          <Image src={img15}></Image>
+                          <Image src={img15} loading="eager"></Image>
                         </li>
                         <li>
-                          <Image src={img16}></Image>
+                          <Image src={img16} loading="eager"></Image>
                         </li>
                       </ul>
                     </Fade>
                     <Fade bottom duration={2000}>
                       <ul>
                         <li>
-                          <Image src={img17}></Image>
+                          <Image src={img17} loading="eager"></Image>
                         </li>
                         <li>
-                          <Image src={img18}></Image>
+                          <Image src={img18} loading="eager"></Image>
                         </li>
                         <li>
-                          <Image src={img19}></Image>
+                          <Image src={img19} loading="eager"></Image>
                         </li>
                         <li>
-                          <Image src={img20}></Image>
+                          <Image src={img20} loading="eager"></Image>
                         </li>
                         <li>
-                          <Image src={img21}></Image>
+                          <Image src={img21} loading="eager"></Image>
                         </li>
                         <li>
-                          <Image src={img22}></Image>
+                          <Image src={img22} loading="eager"></Image>
                         </li>
                         <li>
-                          <Image src={img23}></Image>
+                          <Image src={img23} loading="eager"></Image>
                         </li>
                         <li>
-                          <Image src={img24}></Image>
+                          <Image src={img24} loading="eager"></Image>
                         </li>
                         <li>
-                          <Image src={img25}></Image>
+                          <Image src={img25} loading="eager"></Image>
                         </li>
                       </ul>
                     </Fade>
                     <Fade bottom duration={2500}>
                       <ul>
                         <li>
-                          <Image src={img26}></Image>
+                          <Image src={img26} loading="eager"></Image>
                         </li>
                         <li>
-                          <Image src={img27}></Image>
+                          <Image src={img27} loading="eager"></Image>
                         </li>
                         <li>
-                          <Image src={img28}></Image>
+                          <Image src={img28} loading="eager"></Image>
                         </li>
                         <li>
-                          <Image src={img29}></Image>
+                          <Image src={img29} loading="eager"></Image>
                         </li>
                         <li>
-                          <Image src={img30}></Image>
+                          <Image src={img30} loading="eager"></Image>
                         </li>
                         <li>
-                          <Image src={img31}></Image>
+                          <Image src={img31} loading="eager"></Image>
                         </li>
                         <li>
-                          <Image src={img32}></Image>
+                          <Image src={img32} loading="eager"></Image>
                         </li>
                         <li>
-                          <Image src={img33}></Image>
+                          <Image src={img33} loading="eager"></Image>
                         </li>
                       </ul>
                     </Fade>
@@ -228,51 +228,51 @@ export default function Index() {
                     <Slider {...settings}>
                       <div>
                         <ul>
-                          <li><Image src={img1}></Image></li>
-                          <li><Image src={img2}></Image></li>
-                          <li><Image src={img3}></Image></li>
-                          <li><Image src={img4}></Image></li>
-                          <li><Image src={img5}></Image></li>
-                          <li><Image src={img6}></Image></li>
-                          <li><Image src={img7}></Image></li>
-                          <li><Image src={img8}></Image></li>
+                          <li><Image src={img1}loading="eager" ></Image></li>
+                          <li><Image src={img2}loading="eager" ></Image></li>
+                          <li><Image src={img3}loading="eager" ></Image></li>
+                          <li><Image src={img4}loading="eager" ></Image></li>
+                          <li><Image src={img5}loading="eager" ></Image></li>
+                          <li><Image src={img6}loading="eager" ></Image></li>
+                          <li><Image src={img7}loading="eager" ></Image></li>
+                          <li><Image src={img8}loading="eager" ></Image></li>
                         </ul>
                       </div>
                       <div>
                         <ul>
-                          <li><Image src={img9}></Image></li>
-                          <li><Image src={img10}></Image></li>
-                          <li><Image src={img11}></Image></li>
-                          <li><Image src={img12}></Image></li>
-                          <li><Image src={img13}></Image></li>
-                          <li><Image src={img14}></Image></li>
-                          <li><Image src={img15}></Image></li>
-                          <li><Image src={img16}></Image></li>
+                          <li><Image src={img9}loading="eager" ></Image></li>
+                          <li><Image src={img10}loading="eager" ></Image></li>
+                          <li><Image src={img11}loading="eager" ></Image></li>
+                          <li><Image src={img12}loading="eager" ></Image></li>
+                          <li><Image src={img13}loading="eager" ></Image></li>
+                          <li><Image src={img14}loading="eager" ></Image></li>
+                          <li><Image src={img15}loading="eager" ></Image></li>
+                          <li><Image src={img16}loading="eager" ></Image></li>
                         </ul>
                       </div>
                       <div>
                         <ul>
-                          <li><Image src={img17}></Image></li>
-                          <li><Image src={img18}></Image></li>
-                          <li><Image src={img19}></Image></li>
-                          <li><Image src={img20}></Image></li>
-                          <li><Image src={img21}></Image></li>
-                          <li><Image src={img22}></Image></li>
-                          <li><Image src={img23}></Image></li>
-                          <li><Image src={img24}></Image></li>
-                          <li><Image src={img25}></Image></li>
+                          <li><Image src={img17}loading="eager" ></Image></li>
+                          <li><Image src={img18}loading="eager" ></Image></li>
+                          <li><Image src={img19}loading="eager" ></Image></li>
+                          <li><Image src={img20}loading="eager" ></Image></li>
+                          <li><Image src={img21}loading="eager" ></Image></li>
+                          <li><Image src={img22}loading="eager" ></Image></li>
+                          <li><Image src={img23}loading="eager" ></Image></li>
+                          <li><Image src={img24}loading="eager" ></Image></li>
+                          <li><Image src={img25}loading="eager" ></Image></li>
                         </ul>
                       </div>
                       <div>
                         <ul>
-                          <li><Image src={img26}></Image></li>
-                          <li><Image src={img27}></Image></li>
-                          <li><Image src={img28}></Image></li>
-                          <li><Image src={img29}></Image></li>
-                          <li><Image src={img30}></Image></li>
-                          <li><Image src={img31}></Image></li>
-                          <li><Image src={img32}></Image></li>
-                          <li><Image src={img33}></Image></li>
+                          <li><Image src={img26}loading="eager" ></Image></li>
+                          <li><Image src={img27}loading="eager" ></Image></li>
+                          <li><Image src={img28}loading="eager" ></Image></li>
+                          <li><Image src={img29}loading="eager" ></Image></li>
+                          <li><Image src={img30}loading="eager" ></Image></li>
+                          <li><Image src={img31}loading="eager" ></Image></li>
+                          <li><Image src={img32}loading="eager" ></Image></li>
+                          <li><Image src={img33}loading="eager" ></Image></li>
                         </ul>
                       </div>
                     </Slider>

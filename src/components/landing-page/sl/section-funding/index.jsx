@@ -68,6 +68,7 @@ function Index() {
                               className="d-flex justify-content-center align-items-center"
                               src={val.img}
                               layout="fill"
+                              loading="eager"
                               quality={100}
                             />
                           </div>

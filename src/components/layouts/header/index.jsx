@@ -29,7 +29,12 @@ function index() {
           <div className="iconDS position-relative">
             <div>
               <a href="#">
-                <Image src={icons} layout="fill" quality={100} />
+                <Image
+                  src={icons}
+                  layout="fill"
+                  quality={100}
+                  loading="eager"
+                />
               </a>
             </div>
           </div>

@@ -35,7 +35,12 @@ export default function Index() {
               <div className="col-md-auto">
                 <div className="ds-section__gadget-content-bod-detail-photo">
                   <Fade bottom duration={1000}>
-                    <Image src={wiku} width={220} height={234}></Image>
+                    <Image
+                      src={wiku}
+                      width={220}
+                      height={234}
+                      loading="eager"
+                    ></Image>
                   </Fade>
                 </div>
               </div>

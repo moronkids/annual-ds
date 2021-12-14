@@ -55,7 +55,12 @@ export default function index() {
                 </div>
                 <div className={`col-md-auto ds-section__readers-img`}>
                   <Fade bottom duration={1000}>
-                    <Image src={value.images} width={475} height={400} />
+                    <Image
+                      src={value.images}
+                      width={475}
+                      height={400}
+                      loading="eager"
+                    />
                   </Fade>
                 </div>
               </div>

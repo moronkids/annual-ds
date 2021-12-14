@@ -56,6 +56,7 @@ function Index(props) {
                 src={decidePhoto(props.photo)}
                 quality={100}
                 className="text-center"
+                loading="eager"
               />
             </div>
             <div

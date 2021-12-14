@@ -44,6 +44,7 @@ export default class AutoPlayMethods extends Component {
                     layout="intrinsic"
                     objectFit="cover"
                     quality={100}
+                    loading="eager"
                     style={{
                       borderRadius: "10px",
                       boxShadow: "0 3px 10px #F4F4F4",

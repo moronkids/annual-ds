@@ -59,6 +59,7 @@ export default function Index() {
                             }}
                           >
                             <Image
+                              loading="eager"
                               layout="fill"
                               src={value.images}
                               objectFit="contain"

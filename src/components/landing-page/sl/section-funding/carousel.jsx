@@ -30,6 +30,7 @@ export default class SimpleSlider extends Component {
               src={Img3}
               // width={343}
               // height={474}
+              loading="eager"
               layout="responsive"
               objectFit="cover"
               quality={100}
@@ -54,6 +55,7 @@ export default class SimpleSlider extends Component {
               layout="responsive"
               objectFit="cover"
               quality={100}
+              loading="eager"
               style={{
                 borderRadius: "10px",
               }}
@@ -75,6 +77,7 @@ export default class SimpleSlider extends Component {
               layout="responsive"
               objectFit="cover"
               quality={100}
+              loading="eager"
               style={{
                 borderRadius: "10px",
               }}
