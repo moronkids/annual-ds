@@ -30,7 +30,9 @@ export default function Index() {
                     <div className="ds-section__ecosystem-items">
                       <div className="row">
                         <div className="col-md-auto ds-section__ecosystem-items-img">
-                          <Image src={bell} width={120} height={120}></Image>
+                          <a href="https://dailysocial.id/subscription">
+                            <Image src={bell} width={120} height={120}></Image>
+                          </a>
                         </div>
                         <div className="col-md">
                           <p className="ds-section__ecosystem-items-text">
@@ -61,7 +63,13 @@ export default function Index() {
                     <div className="ds-section__ecosystem-items">
                       <div className="row">
                         <div className="col-md-auto  ds-section__ecosystem-items-img">
-                          <Image src={connect} width={120} height={120}></Image>
+                          <a href="https://connect.dailysocial.id">
+                            <Image
+                              src={connect}
+                              width={120}
+                              height={120}
+                            ></Image>
+                          </a>
                         </div>
                         <div className="col-md">
                           <p className="ds-section__ecosystem-items-text">

@@ -1,15 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 // libs
 import Image from "next/image";
 import Fade from "react-reveal/Fade";
 import Slider from "react-slick";
-import ReactPlaceholder from 'react-placeholder/lib';
+import ReactPlaceholder from "react-placeholder/lib";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import Carousel from "src/components/landing-page/section-partners/Carousel";
 // components
-import Skeleton from './Skeleton';
+import Skeleton from "./Skeleton";
 
 // assets
 import {
@@ -55,10 +55,10 @@ export default function Index() {
     setTimeout(() => {
       setReady(true);
     }, 2000);
-  }
+  };
 
   checkReady();
-  
+
   var settings = {
     mobileFirst: true,
     responsive: [
@@ -95,63 +95,135 @@ export default function Index() {
             </div>
             <div className="ds-container">
               <Fade bottom duration={1000}>
-                <p className="ds-section__partners-clients-title">Partners and supporters </p>
+                <p className="ds-section__partners-clients-title">
+                  Partners and supporters{" "}
+                </p>
               </Fade>
-              
-              <ReactPlaceholder showLoadingAnimation ready={ready} customPlaceholder={<Skeleton />}>
-                <div className="ds-section__partners-clients-list">
+
+              <ReactPlaceholder
+                showLoadingAnimation
+                ready={ready}
+                customPlaceholder={<Skeleton />}
+              >
+                <div className="ds-section__partners-clients-list d-sm-block d-none">
                   <Slider {...settings}>
                     <Fade bottom duration={1000}>
                       <ul>
-                        <li><Image src={img1}></Image></li>
-                        <li><Image src={img2}></Image></li>
-                        <li><Image src={img3}></Image></li>
-                        <li><Image src={img4}></Image></li>
-                        <li><Image src={img5}></Image></li>
-                        <li><Image src={img6}></Image></li>
-                        <li><Image src={img7}></Image></li>
-                        <li><Image src={img8}></Image></li>
+                        <li>
+                          <Image src={img1}></Image>
+                        </li>
+                        <li>
+                          <Image src={img2}></Image>
+                        </li>
+                        <li>
+                          <Image src={img3}></Image>
+                        </li>
+                        <li>
+                          <Image src={img4}></Image>
+                        </li>
+                        <li>
+                          <Image src={img5}></Image>
+                        </li>
+                        <li>
+                          <Image src={img6}></Image>
+                        </li>
+                        <li>
+                          <Image src={img7}></Image>
+                        </li>
+                        <li>
+                          <Image src={img8}></Image>
+                        </li>
                       </ul>
                     </Fade>
                     <Fade bottom duration={1500}>
                       <ul>
-                        <li><Image src={img9}></Image></li>
-                        <li><Image src={img10}></Image></li>
-                        <li><Image src={img11}></Image></li>
-                        <li><Image src={img12}></Image></li>
-                        <li><Image src={img13}></Image></li>
-                        <li><Image src={img14}></Image></li>
-                        <li><Image src={img15}></Image></li>
-                        <li><Image src={img16}></Image></li>
+                        <li>
+                          <Image src={img9}></Image>
+                        </li>
+                        <li>
+                          <Image src={img10}></Image>
+                        </li>
+                        <li>
+                          <Image src={img11}></Image>
+                        </li>
+                        <li>
+                          <Image src={img12}></Image>
+                        </li>
+                        <li>
+                          <Image src={img13}></Image>
+                        </li>
+                        <li>
+                          <Image src={img14}></Image>
+                        </li>
+                        <li>
+                          <Image src={img15}></Image>
+                        </li>
+                        <li>
+                          <Image src={img16}></Image>
+                        </li>
                       </ul>
                     </Fade>
                     <Fade bottom duration={2000}>
                       <ul>
-                        <li><Image src={img17}></Image></li>
-                        <li><Image src={img18}></Image></li>
-                        <li><Image src={img19}></Image></li>
-                        <li><Image src={img20}></Image></li>
-                        <li><Image src={img21}></Image></li>
-                        <li><Image src={img22}></Image></li>
-                        <li><Image src={img23}></Image></li>
-                        <li><Image src={img24}></Image></li>
-                        <li><Image src={img25}></Image></li>
+                        <li>
+                          <Image src={img17}></Image>
+                        </li>
+                        <li>
+                          <Image src={img18}></Image>
+                        </li>
+                        <li>
+                          <Image src={img19}></Image>
+                        </li>
+                        <li>
+                          <Image src={img20}></Image>
+                        </li>
+                        <li>
+                          <Image src={img21}></Image>
+                        </li>
+                        <li>
+                          <Image src={img22}></Image>
+                        </li>
+                        <li>
+                          <Image src={img23}></Image>
+                        </li>
+                        <li>
+                          <Image src={img24}></Image>
+                        </li>
+                        <li>
+                          <Image src={img25}></Image>
+                        </li>
                       </ul>
                     </Fade>
                     <Fade bottom duration={2500}>
                       <ul>
-                        <li><Image src={img26}></Image></li>
-                        <li><Image src={img27}></Image></li>
-                        <li><Image src={img28}></Image></li>
-                        <li><Image src={img29}></Image></li>
-                        <li><Image src={img30}></Image></li>
-                        <li><Image src={img31}></Image></li>
-                        <li><Image src={img32}></Image></li>
-                        <li><Image src={img33}></Image></li>
+                        <li>
+                          <Image src={img26}></Image>
+                        </li>
+                        <li>
+                          <Image src={img27}></Image>
+                        </li>
+                        <li>
+                          <Image src={img28}></Image>
+                        </li>
+                        <li>
+                          <Image src={img29}></Image>
+                        </li>
+                        <li>
+                          <Image src={img30}></Image>
+                        </li>
+                        <li>
+                          <Image src={img31}></Image>
+                        </li>
+                        <li>
+                          <Image src={img32}></Image>
+                        </li>
+                        <li>
+                          <Image src={img33}></Image>
+                        </li>
                       </ul>
                     </Fade>
                   </Slider>
-                  
+
                   {/* <MobileView>
                     <Slider {...settings}>
                       <div>
@@ -207,6 +279,9 @@ export default function Index() {
                   </MobileView> */}
                 </div>
               </ReactPlaceholder>
+              <div className="d-sm-none d-block">
+                <Carousel bottom={"0px"} />
+              </div>
             </div>
           </div>
         </div>
