@@ -25,7 +25,7 @@ export default function Index() {
             <Fade bottom duration={1000}>
               <p className="ds-section__devices-title-main">
                 The most monumental
-                <br className="mobile-only" /> smartphone in 2021
+                <br className="mobile-only" /> smartphones in 2021
               </p>
               <p className="ds-section__devices-title-sub">
                 Smartphones is a thing that new technology won't be able to

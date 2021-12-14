@@ -30,7 +30,7 @@ function Index() {
           <Fade top>
             <div className="col-md-6 col-12 d-flex justify-content-md-end justify-content-center">
               <div>
-                <p className="number">$4.1bio+</p>
+                <p className="number">$4.1 bio+</p>
                 <p className="desc">
                   Total funding <br /> transaction in 2021
                 </p>
@@ -42,7 +42,7 @@ function Index() {
               <div>
                 <p className="number">191</p>
                 <p className="desc">
-                  Total startups that received a total of $4,1bio+ in Indonesia*
+                  Total startups that received a total of $4.1bio+ in Indonesia*
                 </p>
               </div>
             </div>

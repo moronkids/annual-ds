@@ -68,7 +68,7 @@ function Index() {
                     <>
                       <div className="number">594,760</div>
                       <div className="desc">
-                        Startup enthusiast come together to our event
+                        Startup enthusiasts come together to our event
                       </div>
                     </>
                     <div ref={elementRef}></div>

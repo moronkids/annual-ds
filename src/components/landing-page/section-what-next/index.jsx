@@ -39,7 +39,7 @@ export default function Index() {
                 <Fade left duration={1500}>
                   <div className="ds-section__content-bod-detail">
                     <p className="ds-section__content-bod-detail-desc">
-                      This year, through DS/Innovate, we helped companies and
+                      "This year, through DS/Innovate, we helped companies and
                       enterprises connect to Indonesia's startup ecosystem
                       through advisory, research, hackathon, incubator and
                       accelerator programs. We also enable organizations to
@@ -48,7 +48,7 @@ export default function Index() {
                       Indonesia's startup ecosystem to interact directly with
                       one another through a platform that we will launch soon,
                       where our motto here is discover great companies and
-                      explore opportunities all in one place.
+                      explore opportunities all in one place."
                     </p>
                   </div>
                 </Fade>

@@ -62,7 +62,8 @@ export default function Index() {
                     </p>
 
                     <p className="ds-section__gadget-content-bod-detail-position">
-                      Commisioner DailySocial.id and CEO &amp; Founder of Hybrid
+                      Commissioner DailySocial.id and CEO &amp; Founder of
+                      Hybrid
                     </p>
                   </Fade>
                 </div>
