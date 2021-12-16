@@ -43,14 +43,12 @@ export default function Index() {
             <div className="col-md-auto">
               <Fade bottom duration={1000}>
                 <div className="ds-section__journey-img">
-                  <a href="https://dsinnovate.com/contact">
-                    <Image
-                      loading="eager"
-                      src={journey}
-                      width={190}
-                      height={190}
-                    ></Image>
-                  </a>
+                  <Image
+                    loading="eager"
+                    src={journey}
+                    width={190}
+                    height={190}
+                  ></Image>
                 </div>
               </Fade>
             </div>
