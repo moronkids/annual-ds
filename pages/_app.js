@@ -11,7 +11,7 @@ import HeadersWeb from "src/components/layouts/header";
 // import Sidebar from "components/mobile/layouts/sidebar";
 
 import "src/assets/scss/main-style.scss";
-
+import Script from "next/script";
 import "styles/nprogress.css";
 import { AppContext } from "providers";
 import { AppWrapper } from "providers";
@@ -32,6 +32,21 @@ Router.events.on("routeChangeError", () => NProgress.done());
 const MyApp = ({ Component, pageProps }) => {
   return (
     <>
+      <Script
+        strategy="lazyOnload"
+        src={`https://www.googletagmanager.com/gtag/js?id=UA-46696704-3`}
+      />
+      <Script strategy="lazyOnload">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-46696704-3',{
+            page_path: window.location.pathname,
+          });
+        `}
+      </Script>
       <AppWrapper>
         <HeadersWeb />
         <Body>
