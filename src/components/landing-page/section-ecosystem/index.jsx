@@ -30,14 +30,12 @@ export default function Index() {
                     <div className="ds-section__ecosystem-items">
                       <div className="row">
                         <div className="col-md-auto ds-section__ecosystem-items-img">
-
-                            <Image
-                              src={bell}
-                              width={120}
-                              height={120}
-                              loading="eager"
-                            ></Image>
-                          </a>
+                          <Image
+                            src={bell}
+                            width={120}
+                            height={120}
+                            loading="eager"
+                          ></Image>
                         </div>
                         <div className="col-md">
                           <p className="ds-section__ecosystem-items-text">
@@ -68,14 +66,12 @@ export default function Index() {
                     <div className="ds-section__ecosystem-items">
                       <div className="row">
                         <div className="col-md-auto  ds-section__ecosystem-items-img">
-
-                            <Image
-                              src={connect}
-                              width={120}
-                              height={120}
-                              loading="eager"
-                            ></Image>
-
+                          <Image
+                            src={connect}
+                            width={120}
+                            height={120}
+                            loading="eager"
+                          ></Image>
                         </div>
                         <div className="col-md">
                           <p className="ds-section__ecosystem-items-text">
