@@ -56,7 +56,7 @@ export default function Index() {
             <div className="col-md">
               <Fade right duration={1500}>
                 <p className="ds-section__journey-title">
-                  Eager to be part of our journey?
+                  Innovation is just a click away
                 </p>
                 <p className="ds-section__journey-desc">
                   Learn how we work and collaborate with our corporate
