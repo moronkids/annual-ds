@@ -29,7 +29,11 @@ function Index() {
         >
           <Fade top>
             <div className="col-md-6 col-12 d-flex justify-content-md-end justify-content-center">
-              <div>
+              <div
+                style={{
+                  minWidth: "350px",
+                }}
+              >
                 <p className="number">$4.1 bio+</p>
                 <p className="desc">
                   Total funding <br /> transaction in 2021

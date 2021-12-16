@@ -28,7 +28,7 @@ export default function Index() {
                 <br className="mobile-only" /> smartphones in 2021
               </p>
               <p className="ds-section__devices-title-sub">
-                Smartphones is a thing that new technology won't be able to
+                Smartphone is a thing that new technology won't be able to
                 displace them.
                 <br className="desktop-only" /> Let's take a look at the 5 most
                 monumental smartphones in 2021!
