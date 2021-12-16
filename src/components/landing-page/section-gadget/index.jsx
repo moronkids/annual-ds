@@ -48,13 +48,13 @@ export default function Index() {
                 <div className="ds-section__gadget-content-bod-detail">
                   <Fade bottom duration={1500}>
                     <p className="ds-section__gadget-content-bod-text">
-                      "It's been quite tough to adapt to extraordinary
+                      “It's been quite tough to adapt to extraordinary
                       circumstances in 2021. However, it doesn’t stop the
                       technological development that keeps on evolving. We could
                       see through the number of monumental smartphone that has
                       been released, also the number of AAA games sales and its
                       players. Many esports tournament are commonly conducted in
-                      online or hybrid. We know, that they are still growing."
+                      online or hybrid. We know, that they are still growing.”
                     </p>
 
                     <p className="ds-section__gadget-content-bod-detail-name">
@@ -62,8 +62,7 @@ export default function Index() {
                     </p>
 
                     <p className="ds-section__gadget-content-bod-detail-position">
-                      Commissioner DailySocial.id and CEO &amp; Founder of
-                      Hybrid
+                      Co-founder Hybrid.co.id
                     </p>
                   </Fade>
                 </div>

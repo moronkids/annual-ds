@@ -1,6 +1,6 @@
 import { AppContext } from "providers";
 import React, { useContext } from "react";
-
+import { ga_mobile } from "src/helpers/tracker/GaMobile";
 function Index() {
   const { sidebar, setSideBar, activeSection, setActiveSection } =
     useContext(AppContext);
@@ -13,6 +13,7 @@ function Index() {
         onClick={() => {
           setActiveSection(1);
           setSideBar(!sidebar);
+          ga_mobile("activities-btn");
         }}
         className={`text-menu bordered_ ${activeSection === 1 && "active"}`}
       >
@@ -22,6 +23,7 @@ function Index() {
         onClick={() => {
           setActiveSection(2);
           setSideBar(!sidebar);
+          ga_mobile("startups-btn");
         }}
         className={`text-menu bordered_ ${activeSection === 2 && "active"}`}
       >
@@ -31,6 +33,7 @@ function Index() {
         onClick={() => {
           setActiveSection(3);
           setSideBar(!sidebar);
+          ga_mobile("tech-esports-btn");
         }}
         className={`text-menu bordered_ ${activeSection === 3 && "active"}`}
       >
@@ -40,6 +43,7 @@ function Index() {
         onClick={() => {
           setActiveSection(4);
           setSideBar(!sidebar);
+          ga_mobile("partners-btn");
         }}
         className={`text-menu bordered_ ${activeSection === 4 && "active"}`}
       >
@@ -49,6 +53,7 @@ function Index() {
         onClick={() => {
           setActiveSection(5);
           setSideBar(!sidebar);
+          ga_mobile("for-readers-btn");
         }}
         className={`text-menu ${activeSection === 5 && "active"}`}
       >

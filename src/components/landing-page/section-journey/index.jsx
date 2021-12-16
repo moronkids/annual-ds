@@ -10,6 +10,7 @@ import Skeleton from "./Skeleton";
 
 // assets
 import journey from "src/assets/images/illustration/journey.png";
+import { ga_mobile } from "src/helpers/tracker/GaMobile";
 
 export default function Index() {
   const [ready, setReady] = useState(false);
@@ -68,6 +69,9 @@ export default function Index() {
                   className="ds-button"
                   style={{
                     marginTop: "0px",
+                  }}
+                  onClick={() => {
+                    ga_mobile("discuss-btn");
                   }}
                 >
                   <span>Discuss with us</span>

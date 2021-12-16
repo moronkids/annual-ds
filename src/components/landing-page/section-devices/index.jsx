@@ -6,6 +6,7 @@ import Fade from "react-reveal/Fade";
 import Link from "next/link";
 // assets
 import { DataDevices } from "src/helpers/dummy-data/datadevices";
+import { ga_mobile } from "src/helpers/tracker/GaMobile";
 
 export default function Index() {
   return (
@@ -50,7 +51,14 @@ export default function Index() {
                         <div className="ds-section__devices-item-images-bg"></div>
                       </Fade>
                       <Fade top duration={1500}>
-                        <a href={value.link} target="_blank" className="w-100">
+                        <a
+                          href={value.link}
+                          target="_blank"
+                          className="w-100"
+                          onClick={() => {
+                            ga_mobile(value.case);
+                          }}
+                        >
                           <div
                             className="wrap-img"
                             style={{

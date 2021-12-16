@@ -36,7 +36,7 @@ function Index() {
               >
                 <p className="number">$4.1 bio+</p>
                 <p className="desc">
-                  Total funding <br /> transaction in 2021
+                  Total disclosed amount <br /> in 2021*
                 </p>
               </div>
             </div>
@@ -46,13 +46,17 @@ function Index() {
               <div>
                 <p className="number">191</p>
                 <p className="desc">
-                  Total startups that received a total of $4.1bio+ in Indonesia*
+                  Total disclosed funding <br /> announcement in 2021*
                 </p>
               </div>
             </div>
           </Fade>
         </div>
+
         <div className="ds-funding-startup ds-container w-100 d-md-block d-none">
+          <p className="text-right w-100 d-sm-block d-none  desc-date">
+            *per mid of Nov 2021
+          </p>
           <div className="wrapping-box">
             <div className="grid">
               {startup.map((val, i) => {
@@ -88,9 +92,7 @@ function Index() {
             </div>
           </div>
         </div>
-        <p className="text-right w-100 d-sm-block d-none  desc-date">
-          *per mid of Nov 2021
-        </p>
+
         {/* <div className="testing d-sm-none d-block"> */}
         <div className="w-100 h-100 ds-crsl-2 d-md-none d-block">
           <p className="text-right w-100 desc-date">*per mid of Nov 2021</p>

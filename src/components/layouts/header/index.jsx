@@ -3,6 +3,7 @@ import icons from "styles/assets/icons/icon-ds.svg";
 import Image from "next/image";
 import Sidebar from "src/components/layouts/sidebar-mobile";
 import { AppContext } from "providers";
+import { ga_dekstop } from "src/helpers/tracker/Ga";
 function index() {
   const {
     sidebar,
@@ -28,7 +29,12 @@ function index() {
         <div className="ds-container d-flex mx-auto d-flex align-items-center my-auto w-100 justify-content-between">
           <div className="iconDS position-relative">
             <div>
-              <a href="#">
+              <a
+                href="#"
+                onClick={() => {
+                  ga_mobile("ds-logo");
+                }}
+              >
                 <Image
                   src={icons}
                   layout="fill"
@@ -40,7 +46,10 @@ function index() {
           </div>
           <div
             className="btn-menu d-sm-none d-block"
-            onClick={() => setSideBar(!sidebar)}
+            onClick={() => {
+              setSideBar(!sidebar);
+              ga_mobile("hamburger-btn");
+            }}
           >
             <div className="content d-flex justify-content-between align-items-center">
               <div>
@@ -62,27 +71,57 @@ function index() {
           </div>
           <div className="list-menu d-sm-block d-none">
             <ul className="d-flex flex-row justify-content-center align-items-center h-100 my-auto">
-              <a href="#activities" onClick={() => setActiveSection(1)}>
+              <a
+                href="#activities"
+                onClick={() => {
+                  setActiveSection(1);
+                  ga_dekstop("act-btn");
+                }}
+              >
                 <li className={`${activeSection === 1 && "active"}`}>
                   Activities
                 </li>
               </a>
-              <a href="#startup" onClick={() => setActiveSection(2)}>
+              <a
+                href="#startup"
+                onClick={() => {
+                  setActiveSection(2);
+                  ga_dekstop("startups-btn");
+                }}
+              >
                 <li className={`${activeSection === 2 && "active"}`}>
                   Startups
                 </li>
               </a>
-              <a href="#gadget" onClick={() => setActiveSection(3)}>
+              <a
+                href="#gadget"
+                onClick={() => {
+                  setActiveSection(3);
+                  ga_dekstop("tech-esports-btn");
+                }}
+              >
                 <li className={`${activeSection === 3 && "active"}`}>
                   Tech & Esports
                 </li>
               </a>
-              <a href="#partners" onClick={() => setActiveSection(4)}>
+              <a
+                href="#partners"
+                onClick={() => {
+                  setActiveSection(4);
+                  ga_dekstop("partners-btn");
+                }}
+              >
                 <li className={`${activeSection === 4 && "active"}`}>
                   Partners
                 </li>
               </a>
-              <a href="#readers" onClick={() => setActiveSection(5)}>
+              <a
+                href="#readers"
+                onClick={() => {
+                  setActiveSection(5);
+                  ga_dekstop("for-readers-btn");
+                }}
+              >
                 <li className={`${activeSection === 5 && "active"}`}>
                   For Readers
                 </li>

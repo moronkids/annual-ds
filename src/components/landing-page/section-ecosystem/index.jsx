@@ -7,6 +7,7 @@ import Fade from "react-reveal/Fade";
 // assets
 import bell from "src/assets/images/illustration/bell.png";
 import connect from "src/assets/images/illustration/connect.png";
+import { ga_mobile } from "src/helpers/tracker/GaMobile";
 
 export default function Index() {
   return (
@@ -52,6 +53,9 @@ export default function Index() {
                             style={{
                               marginTop: "0px",
                             }}
+                            onClick={() => {
+                              ga_mobile("subscribe-btn");
+                            }}
                           >
                             <span>Let’s subscribe</span>
                           </a>
@@ -87,6 +91,9 @@ export default function Index() {
                             className="ds-button"
                             style={{
                               marginTop: "0px",
+                            }}
+                            onClick={() => {
+                              ga_mobile("letme-in-btn");
                             }}
                           >
                             <span>Let me in</span>
