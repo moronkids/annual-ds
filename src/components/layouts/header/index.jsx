@@ -4,6 +4,7 @@ import Image from "next/image";
 import Sidebar from "src/components/layouts/sidebar-mobile";
 import { AppContext } from "providers";
 import { ga_dekstop } from "src/helpers/tracker/Ga";
+import { ga_mobile } from "src/helpers/tracker/GaMobile";
 function index() {
   const {
     sidebar,

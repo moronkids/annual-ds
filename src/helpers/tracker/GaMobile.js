@@ -2,17 +2,17 @@ export const ga_mobile = (event) => {
   // console.log(event, "ehehe");
   alert(event);
   switch (event) {
-    case "ds-logo": //  ✅
+    case "ds-logo": //
       window.gtag("event", "ds-logo-button-header-annual", {
         event_category: "tag",
       });
       break;
-    case "hamburger-btn": //  ✅
+    case "hamburger-btn": //
       window.gtag("event", "hamburger-menu-header-annual", {
         event_category: "tag",
       });
       break;
-    case "journey-btn": //  ✅
+    case "journey-btn": //
       window.gtag("event", "journey-button-annual", {
         event_category: "tag",
       });

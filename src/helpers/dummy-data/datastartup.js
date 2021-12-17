@@ -79,13 +79,13 @@ export const startup = [
   },
   {
     img: Amartha,
-    fund: "$85,5 mio",
+    fund: "$85.5 mio",
     w: "119",
     h: "32",
   },
   {
     img: Sirclo,
-    fund: "$58 mio",
+    fund: "$81 mio",
     w: "112",
     h: "32",
   },
@@ -98,7 +98,7 @@ export const startup = [
 
   {
     img: Tanihub,
-    fund: "$65 mio",
+    fund: "$65.5 mio",
     w: "112",
     h: "26",
   },

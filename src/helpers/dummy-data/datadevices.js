@@ -21,14 +21,14 @@ export const DataDevices = [
   },
   {
     name: "Vivo X70 Pro",
-    images: vivo,
+    images: m11,
     link: "https://dailysocial.id/post/review-vivo-x70-pro",
     w: 157,
     case: "smartphone-3",
   },
   {
     name: "Mi 11 Ultra",
-    images: m11,
+    images: vivo,
     link: "https://dailysocial.id/post/xiaomi-luncurkan-mi-11-lite-dan-mi-11-ultra-smartphone-seri-mi-11-termurah-dan-termahal",
     w: 152,
     case: "smartphone-4",

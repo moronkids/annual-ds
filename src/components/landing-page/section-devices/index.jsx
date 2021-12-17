@@ -50,15 +50,14 @@ export default function Index() {
                       <Fade duration={3500}>
                         <div className="ds-section__devices-item-images-bg"></div>
                       </Fade>
-                      <Fade top duration={1500}>
-                        <a
-                          href={value.link}
-                          target="_blank"
-                          className="w-100"
-                          onClick={() => {
-                            ga_mobile(value.case);
-                          }}
-                        >
+                      <Fade
+                        top
+                        duration={1500}
+                        onClick={() => {
+                          ga_mobile(value.case);
+                        }}
+                      >
+                        <a href={value.link} target="_blank" className="w-100">
                           <div
                             className="wrap-img"
                             style={{
