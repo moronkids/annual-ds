@@ -17,34 +17,34 @@ export const ga_mobile = (event) => {
         event_category: "tag",
       });
       break;
-    case "monumental-phone-btn-1": //  ✅
+    case "smartphone-1": //  ✅
       window.gtag("event", "smartphone-annual", {
         event_category: "tag",
-        label: "smartphone-1",
+        event_label: "smartphone-1",
       });
       break;
-    case "monumental-phone-btn-2": //  ✅
+    case "smartphone-2": //  ✅
       window.gtag("event", "smartphone-annual", {
         event_category: "tag",
-        label: "smartphone-2",
+        event_label: "smartphone-2",
       });
       break;
-    case "monumental-phone-btn-3": //  ✅
+    case "smartphone-3": //  ✅
       window.gtag("event", "smartphone-annual", {
         event_category: "tag",
-        label: "smartphone-3",
+        event_label: "smartphone-3",
       });
       break;
-    case "monumental-phone-btn-4": //  ✅
+    case "smartphone-4": //  ✅
       window.gtag("event", "smartphone-annual", {
         event_category: "tag",
-        label: "smartphone-4",
+        event_label: "smartphone-4",
       });
       break;
-    case "monumental-phone-btn-5": //  ✅
+    case "smartphone-5": //  ✅
       window.gtag("event", "smartphone-annual", {
         event_category: "tag",
-        label: "smartphone-5",
+        event_label: "smartphone-5",
       });
       break;
     case "discuss-btn": //  ✅
