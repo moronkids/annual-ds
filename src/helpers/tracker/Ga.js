@@ -1,6 +1,6 @@
 export const ga_dekstop = (event) => {
   // console.log(event, "ehehe");
-  alert(event);
+
   switch (event) {
     case "act-btn": //  ✅
       window.gtag("event", "activities-button-header-annual", {
