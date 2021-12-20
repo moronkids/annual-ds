@@ -1,6 +1,4 @@
 export const ga_mobile = (event) => {
-  // console.log(event, "ehehe");
-
   switch (event) {
     case "ds-logo": //
       window.gtag("event", "ds-logo-button-header-annual", {

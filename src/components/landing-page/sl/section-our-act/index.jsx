@@ -8,8 +8,6 @@ import { useOnScreen } from "src/helpers/dummy-data/userIntersection";
 function Index() {
   const elementRef = useRef(null);
   const isOnScreen = useOnScreen(elementRef);
-
-  console.log({ isOnScreen });
   return (
     <div>
       <div className="ds-container d-flex justify-content-centner align-items-center mx-auto">

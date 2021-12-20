@@ -18,7 +18,6 @@ import personCEO from "styles/assets/PersonCEO.png";
 //tes
 function Index(props) {
   const decidePhoto = (val) => {
-    // console.log(val, props.photo, "cek");
     if (val === "amir") {
       return personAmir;
     } else {
