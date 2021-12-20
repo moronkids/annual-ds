@@ -16,7 +16,7 @@ export const DataReaders = [
     imagesDirection: "right",
   },
   {
-    title: "Indonesia's official esports tournament 2021* ",
+    title: "Indonesia's official esports tournament 2021 ",
     desc: "It's not only a sport, but it‌'s also the most popular esports of today.",
     images: Tournament,
     imagesDirection: "left",

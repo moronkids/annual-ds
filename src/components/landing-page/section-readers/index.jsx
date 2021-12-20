@@ -47,9 +47,11 @@ export default function index() {
                       <p className="ds-section__readers-desc-content">
                         {value.desc}
                       </p>
-                      {/* <p className="ds-section__readers-desc-date">
-                        *per Oct 2021
-                      </p> */}
+                      {index !== 2 && (
+                        <p className="ds-section__readers-desc-date">
+                          *per Oct 2021
+                        </p>
+                      )}
                     </div>
                   </Fade>
                 </div>
